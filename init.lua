@@ -119,6 +119,9 @@ return {
         -- worlds. No per-tick serialization or recorder-specific hook is needed.
         modules['map-extensions']:registerSection('ucp2-legacy', persistentState)
         self.simulationStateFormat = 1
+        -- Read-only export for world snapshots that cannot invoke a native save
+        -- (for example, a recorder running on a multiplayer client).
+        self.serializeSimulationState = function(_, handle) persistentState:serialize(handle) end
 
     end,
 

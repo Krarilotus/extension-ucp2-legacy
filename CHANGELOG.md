@@ -8,3 +8,5 @@
   The missing state of an old save cannot be reconstructed exactly.
 - Require map-extensions 1.0.0 and UCP 3.0.7 for the existing custom save-section
   mechanism. Save and restore happen at world boundaries, with no new tick hooks.
+- Expose the same serializer as a read-only export for multiplayer world captures,
+  where invoking the native save routine is unsuitable.
