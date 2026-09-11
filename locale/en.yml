@@ -244,3 +244,15 @@ u_spearmen_run_descr: |
 u_tanner_fix: Fix tanners returning without a cow
 u_tanner_fix_descr: |
   Tanners will no longer return without a cow when another tanner took their targeted cow. They will now wait a bit and then select a different cow.
+ui.red: red
+ui.orange: orange
+ui.yellow: yellow
+ui.blue: blue
+ui.black: black
+ui.purple: purple
+ui.lightblue: lightblue
+ui.green: green
+tags.balance: Balance
+tags.bugfixes: Bug fixes
+tags.ai: AI
+tags.economy: Economy

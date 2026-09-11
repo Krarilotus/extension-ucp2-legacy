@@ -16,8 +16,3 @@ tags:
 - economy
 family:
 - name: ucp2-legacy
-capabilities:
-  files: false
-  code: true
-  configuration: false
-  options: true
