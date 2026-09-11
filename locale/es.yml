@@ -1,0 +1,279 @@
+ui.red: Rojo
+ui.orange: Naranja
+ui.yellow: Amarillo
+ui.blue: Azul
+ui.black: Negro
+ui.purple: Morado
+ui.lightblue: Azul claro
+ui.green: Verde
+Name: Parche no oficial de Crusader
+ai: IA
+balance_changes: Cambios de equilibrio
+bugfixes: Correcciones de errores
+fixes: Correcciones
+improvements: Mejoras
+misc: Varios
+qol: Comodidad de juego
+ai_housing: Gestión más inteligente de las viviendas
+ai_housing_descr: 'Permite a los señores de la IA gestionar mejor sus viviendas: ajusta los criterios para dejar
+  de construir casas e impide que las demuelan. En general, esto permite que la IA se expanda más deprisa y consiga
+  nuevos trabajadores antes al principio de la partida.'
+ai_build_housing: Ajustar las plazas libres para nuevos campesinos
+ai_build_housing_descr: 'Determina cuándo deja de construir casas la IA según las plazas todavía disponibles para
+  nuevos campesinos. En el juego original el valor es 0: la IA solo construye casas cuando todas las existentes
+  están ocupadas.
+
+  Esta opción también impide que la IA demuela sus casas sobrantes.'
+ai_campfire_housing: Ajustar el espacio para campesinos inactivos en la hoguera
+ai_campfire_housing_descr: 'Ajusta el número máximo de campesinos en las hogueras de la IA antes de que deje de
+  construir casas.
+
+  Esta opción también impide que la IA demuela sus casas sobrantes.'
+ai_delete_housing: Esta opción únicamente impide que la IA demuela sus casas sobrantes.
+ai_demolish: Demoler edificios para obtener dinero
+ai_demolish_descr: Cuando la IA se siente amenazada, demuele edificios económicos o defensivos para conseguir dinero
+  rápidamente y reclutar tropas. A veces lo hace sin motivo aparente, y demoler esos edificios suele ser una mala
+  estrategia. Puedes desactivar los siguientes tipos de demolición para obtener dinero.
+ai_demolish_eco: Edificios económicos
+ai_demolish_trapped: Edificios inaccesibles
+ai_demolish_walls: Edificios defensivos
+ai_access: No demoler edificios inaccesibles
+ai_access_descr: La IA deja de demoler y reconstruir continuamente los edificios a los que no puede llegar un trabajador.
+ai_addattack: Cambiar el aumento del ejército por oleada de ataque
+ai_addattack_descr: En el juego original, cada señor de la IA aumenta su ejército en 5 unidades con cada ataque
+  principal. Aquí puedes ajustar esa cantidad.
+ai_addattack_alt_descr: 'También puedes hacer que la IA aumente su ejército en un porcentaje del tamaño inicial,
+  que es distinto para cada señor.
+
+  Ejemplo: factor de escala = 0.5
+
+  Tropas de ataque del Sultán = 10, 15, 20, 25, ...
+
+  Tropas de ataque de Saladino = 50, 75, 100, 125, ...'
+ai_assaultswitch: Impedir que la IA cambie de objetivo durante un asedio
+ai_assaultswitch_descr: Las IA que elegían al enemigo más rico o más débil a veces reevaluaban su objetivo en pleno
+  asedio y enviaban sus tropas al otro lado del mapa. Con esta corrección, la IA mantiene el objetivo que ya había
+  elegido.
+ai_attacklimit: Ajustar el límite de reclutamiento de tropas de ataque de la IA
+ai_attacklimit_descr: 'El ejército principal de la IA está limitado al tamaño de su primer ataque más este valor
+  (200 en el juego original). Al alcanzar el límite, deja de reclutar tropas y de enviar ataques principales.
+
+  NOTA: Los valores muy altos pueden alcanzar el límite global de unidades en partidas largas e impedir que aparezcan
+  nuevos campesinos.'
+ai_attacktarget: Modificar los objetivos de ataque de la IA
+ai_attacktarget_descr: 'Permite modificar cómo eligen sus objetivos de ataque todos los señores de la IA.
+
+  NOTA: El módulo aiSwapper permite configurar con más detalle el comportamiento individual de cada IA mediante
+  sus parámetros AIC.'
+ai_attacktarget_nearest: Enemigo más cercano
+ai_attacktarget_richest: Enemigo más rico
+ai_attacktarget_weakest: Enemigo más débil
+ai_attackwave: Comportamiento de ataque más activo de la IA
+ai_attackwave_descr: 'En el juego original, la IA solo envía un soldado por tramo de muralla; si hay más tropas
+  que tramos disponibles, el resto espera a que quede uno libre.
+
+  Esta opción permite que varias unidades ataquen cada tramo para destruirlo más deprisa, y que ataquen edificios
+  y torres que antes ignoraban.
+
+  Además, la IA envía todas las tropas de ataque restantes al torreón enemigo una vez abiertas las murallas.
+
+  A continuación puedes ajustar el porcentaje de tropas que ataca edificios fuera del castillo antes de abrir una
+  brecha.'
+ai_buywood: Comprar madera adicional
+ai_buywood_descr: Al construir, la IA del juego original solo compra la madera exacta que necesita para el edificio.
+  No deja un margen para la producción de armas que también consume madera. Para evitar ese problema, la IA compra
+  2 unidades adicionales de madera en ese caso.
+ai_defense: Reposición más fiable de los defensores del castillo
+ai_defense_descr: Corrige un error que impedía a la IA reponer tropas ausentes de murallas y torres mientras siguieran
+  existiendo patrullas defensivas.
+ai_fix_crusader_archers_pitch: Permitir que los arqueros europeos enciendan la brea
+ai_fix_crusader_archers_pitch_descr: Los arqueros europeos de la IA encienden la brea igual que los arqueros árabes
+  al defenderse de unidades enemigas.
+ai_fix_laddermen_with_enclosed_keep: Permitir que las IA encerradas utilicen escaleros
+ai_fix_laddermen_with_enclosed_keep_descr: La IA ya no deja de atacar murallas enemigas con escaleros cuando su
+  propio torreón está encerrado.
+ai_nosleep: Desactivar la suspensión de los edificios de producción
+ai_nosleep_descr: 'Los señores de la IA suspenden sus edificios de producción cuando se agota un recurso necesario.
+  Por ejemplo, Saladino suspende todas sus panaderías cuando se queda sin harina.
+
+  Sin embargo, esto suele ignorar mercancías que aún se están procesando o transportando, lo que provoca pérdidas
+  continuas.
+
+  Aquí puedes desactivar por completo esta suspensión para la IA.'
+ai_resources_rebuy: Mejorar la reposición de mercancías necesarias de la IA
+ai_resources_rebuy_descr: La IA a menudo no repone mercancías aunque tenga oro suficiente, lo que paraliza sus cadenas
+  de producción. Esta opción reduce el tiempo que espera con las existencias vacías antes de comprar los productos
+  necesarios.
+ai_noflour_maxtime_descr: Tiempo, en doceavas partes de un mes, hasta que la IA repone 2 unidades de harina.
+ai_noiron_maxtime_descr: Tiempo, en doceavas partes de un mes, hasta que la IA repone 2 unidades de hierro.
+ai_nowood_maxtime_descr: Tiempo, en doceavas partes de un mes, hasta que la IA repone 5 unidades de madera.
+ai_rebuild: Mejorar las reparaciones de la IA
+ai_rebuild_descr: La IA sustituye torres en ruinas y murallas ligeramente dañadas. También vuelve a construir sobre
+  las zonas de reunión de edificios de reclutamiento cuando falta el edificio principal.
+ai_recruitinterval: Fijar el reclutamiento a la máxima velocidad
+ai_recruitinterval_descr: 'Establece el intervalo mínimo de reclutamiento para todas las IA, a la misma velocidad
+  que la Rata o Ricardo en el juego original.
+
+  NOTA: aiSwapper permite ajustar con más detalle la velocidad de reclutamiento individual mediante los parámetros
+  AIC.'
+ai_recruitstate_initialtimer: Ajustar el tiempo inicial hasta que la IA recluta según los parámetros AIC
+ai_recruitstate_initialtimervalue_descr: Ajusta cuántos meses recluta la IA exclusivamente tropas defensivas, salvo
+  que ya haya completado su cupo de defensores. En el juego original este período dura 6 meses.
+ai_tethers: Limitar los puestos de bueyes a 10 por señor de la IA
+ai_tethers_descr: Normalmente la IA construye un puesto de bueyes con cada nueva cantera, aunque supere el límite
+  habitual de 10 por señor. La acumulación de puestos puede alcanzar el límite de viviendas del señor e impedir
+  la aparición de nuevos campesinos. Esta opción evita colocar ese puesto adicional al construir una cantera.
+ai_towerengines: Aumentar el límite de máquinas de asedio en torres de la IA
+ai_towerengines_descr: Normalmente la IA construye como máximo tres mangoneles y tres balistas en sus torres. Esta
+  opción aumenta el límite a 5 de cada tipo.
+fix_apple_orchard_build_size: Reducir el tamaño de colocación del huerto de manzanos
+fix_apple_orchard_build_size_descr: Ajusta la vista previa del huerto al espacio que ocupa después de colocarlo.
+  Esto ahorra espacio y facilita que la IA encuentre un lugar para construirlo en los oasis.
+o_armory_marketplace_weapon_order_fix: Igualar el orden de las armas del mercado y la armería
+o_armory_marketplace_weapon_order_fix_descr: Ordena los iconos de armas del mercado igual que en la armería. Incluye
+  tanto las páginas del mercado como la vista de la categoría principal.
+o_change_siege_engine_spawn_position_catapult: Crear máquinas de asedio en el centro de su tienda
+o_change_siege_engine_spawn_position_catapult_descr: 'En el juego original las máquinas de asedio aparecen en la
+  esquina superior derecha de su tienda de construcción. Esta opción las coloca en el centro.
+
+  Sin embargo, la propia tienda sigue sin estar centrada en la posición indicada en el editor AIV.'
+o_default_multiplayer_speed: Ajustar la velocidad multijugador predeterminada
+o_default_multiplayer_speed_descr: Permite definir la velocidad multijugador predeterminada, que también se aplica
+  al cargar la partida en lugar de la velocidad habitual de 40.
+o_disable_border_scrolling: Desactivar el desplazamiento al llevar el cursor al borde
+o_disable_border_scrolling_descr: 'Llevar el cursor al borde de la pantalla deja de mover la cámara.
+
+  NOTA: Esta opción está pensada para el modo ventana, cuando sacas el ratón de ella para hacer otras cosas.'
+o_engineertent: Colocación continua de tiendas de asedio
+o_engineertent_descr: Permite colocar máquinas de asedio continuamente sin que el juego las deseleccione automáticamente
+  después de colocar una tienda.
+o_fast_placing: Colocación continua de edificios comunes
+o_fast_placing_descr: 'Al mantener pulsado el botón izquierdo del ratón se colocan continuamente las siguientes
+  construcciones:
+
+  fosos de estacas, leñadores, cosas buenas y malas, molinos, pozos, panaderías y viviendas.'
+o_firecooldown: Ajustar la protección contra incendios tras apagarlos
+o_firecooldown_descr: Tiempo durante el cual un edificio cuyo fuego se ha apagado no puede volver a arder. En el
+  juego original son 2000 ticks, equivalentes a 2 meses y medio.
+o_fix_baker_disappear: Evitar que desaparezcan los panaderos
+o_fix_baker_disappear_descr: Los panaderos ya no desaparecen cuando no encuentran harina en la reserva a la que
+  se dirigen.
+o_fix_fletcher_bug: Corregir los recorridos ineficientes de los fabricantes de arcos
+o_fix_fletcher_bug_descr: Después de entregar un arco o una ballesta en la armería, los fabricantes dejan de volver
+  primero a su taller y van directamente a la reserva para recoger madera para el siguiente ciclo.
+o_fix_ladderclimb: Mantener el destino de movimiento al subir escaleras
+o_fix_ladderclimb_descr: Las unidades recuerdan su destino original después de subir una escalera, en lugar de quedarse
+  paradas en la casilla de muralla a la que han subido.
+o_fix_map_sending: Permitir el envío de mapas en multijugador
+o_fix_map_sending_descr: Acorta el nombre del mapa enviado para que el envío vuelva a funcionar.
+o_fix_moat_digging_unit_disappearing: Evitar que desaparezcan las tropas que excavan
+o_fix_moat_digging_unit_disappearing_descr: 'Corrige el error que hacía desaparecer a las unidades mientras excavaban
+  fosos.
+
+  NOTA: Todavía pueden desaparecer si les ordenas moverse cuando están sobre terreno intransitable.'
+o_fix_rapid_deletion_bug: Corregir la duplicación de recursos al demoler rápidamente
+o_fix_rapid_deletion_bug_descr: Un autoclic rápido ya no demuele el mismo edificio varias veces. Así no se recuperan
+  más recursos de los previstos por el juego.
+o_freetrader: Mercado gratuito
+o_freetrader_descr: Elimina el coste en recursos del mercado para que la IA no se quede bloqueada por no poder construirlo.
+  En multijugador evita tener que reiniciar o demoler edificios para conseguir madera cuando se ha olvidado construir
+  un mercado.
+o_gamespeed: Ampliar los límites de velocidad del juego
+o_gamespeed_descr: 'Permite cambiar la velocidad así:
+
+  - De 10 a 90 en pasos de 5.
+
+  - De 90 a 200 en pasos de 10.
+
+  - De 200 a 1000 en pasos de 100.
+
+  Los nuevos valores solo están disponibles mediante las teclas + y - durante la partida; el control deslizante
+  del menú no cambia.'
+o_healer: El boticario también actúa como sanador
+o_healer_descr: 'El boticario busca activamente soldados, máquinas de asedio, civiles y animales heridos para curarlos,
+  empezando por los más cercanos. Cada animación de curación restaura aproximadamente un tercio de la salud de un
+  lancero. No sustituye sus paseos por jardines ni la investigación de nubes de peste.
+
+  Solo omite sus paseos por el castillo mientras haya heridos en la zona.'
+o_increase_path_update_tick_rate: Comprobar rutas disponibles con más frecuencia
+o_increase_path_update_tick_rate_descr: 'El juego original comprueba nuevas rutas cada 200 ticks, lo que a menudo
+  impide que las unidades entren inmediatamente al castillo tras destruir una puerta o torre.
+
+  Reduce el intervalo a 50 ticks para que las unidades detecten antes los nuevos caminos.'
+o_keys: Mover la cámara con WASD y habilitar guardados rápidos
+o_keys_descr: 'Permite mover la cámara con WASD, guardar rápidamente con Ctrl+S y cargar con Ctrl+L.
+
+  NOTA: Con esta opción resulta inviable escribir descripciones de mapas o seleccionar la armería con A.'
+o_moatvisibility: Mostrar siempre el foso planificado
+o_moatvisibility_descr: El foso planificado y sin terminar permanece visible incluso al deseleccionar la herramienta
+  de fosos o cuando no hay unidades seleccionadas.
+o_onlyai: Activar el modo espectador [puede haber errores]
+o_onlyai_descr: 'Quita al jugador humano del primer puesto para observar partidas entre hasta 8 IA sin intervenir.
+  Las partidas guardadas se cargan correctamente, pero un jugador humano que estuviera presente no será controlable.
+  A veces aparecen objetos aleatorios por el mapa: es un fallo visual que se elimina guardando, terminando la misión
+  y volviendo a cargar.'
+o_override_identity_menu: Añadir funciones al menú de identidad
+o_override_identity_menu_descr: 'Añade la elección de unidades cuerpo a cuerpo y a distancia al menú de identidad
+  para las escaramuzas de tipo normal.
+
+  NOTA: Para cambiar aún más las tropas iniciales, puedes usar las opciones del módulo startResources.'
+o_playercolor: Intercambiar el color de este puesto con el primero
+o_playercolor_descr: Intercambia el color de otro puesto con el rojo para dar al jugador el color que prefiera.
+  Elegir rojo aquí no tiene ningún efecto.
+o_remove_right_click_context_menu: Eliminar el menú contextual del botón derecho
+o_remove_right_click_context_menu_descr: Elimina el menú del botón derecho que permite girar el mapa, bajar murallas,
+  acercar la vista y aplanar el terreno.
+o_responsivegates: Respuesta automática más rápida de las puertas
+o_responsivegates_descr: 'Las puertas a menudo dejaban atrapada a la IA y bloqueaban el paso demasiado tiempo. Ahora
+  se cierran más tarde al acercarse enemigos y se abren antes cuando pasa el peligro.
+
+  Reduce la distancia de detección de 200 a 140 y el tiempo de reapertura sin enemigos de 1200 a 100 ticks.'
+o_restore_arabian_engineer_speech: Restaurar las voces de los ingenieros árabes
+o_restore_arabian_engineer_speech_descr: Al usar un señor árabe, los ingenieros emplean las voces árabes grabadas
+  originalmente.
+o_shfy: Adaptar a Stronghold 1
+o_shfy_descr: 'Adapta los aspectos indicados al equilibrio de Stronghold 1.
+
+  Atención: Todos los cambios también afectan a los señores de la IA y, en el peor caso, pueden volverlos inútiles.'
+o_shfy_beer: Bonificación de popularidad por cerveza
+o_shfy_peasantspawnrate: Frecuencia de aparición de campesinos en la hoguera
+o_shfy_religion: Bonificación de popularidad por catedrales e iglesias
+o_shfy_resourcequantity: Cantidad de recursos entregados
+o_stop_player_keep_rotation: Orientar el torreón del jugador hacia el centro del mapa
+o_stop_player_keep_rotation_descr: 'Los torreones de los jugadores se orientan como los de la IA, con la hoguera
+  hacia el borde del mapa.
+
+  NOTA: No gira los demás edificios: sus entradas y zonas de reunión siguen apuntando hacia la esquina suroeste.'
+o_xtreme: Eliminar la barra mágica de Crusader Extreme
+u_arabwall: Los espadachines árabes destruyen murallas más deprisa
+u_arabwall_descr: En el juego original los espadachines árabes destruyen murallas más despacio que cualquier otra
+  unidad cuerpo a cuerpo. Esta opción aproximadamente duplica su velocidad contra murallas y los sitúa ligeramente
+  por encima de los lanceros.
+u_arabxbow: Mayor protección de los espadachines árabes contra virotes
+u_arabxbow_descr: Los espadachines árabes mueren tras 6 impactos de ballesta en lugar de 3.
+u_fireballistafix: Las balistas incendiarias apuntan automáticamente a monjes y excavadores
+u_fix_applefarm_blocking: Evitar que se bloquee el trabajador del huerto
+u_fix_applefarm_blocking_descr: Colocar edificios en el lado superior izquierdo del huerto ya no bloquea al granjero
+  mientras recoge manzanas.
+u_fix_lord_animation_stuck_movement: Restablecer la animación del señor al destruir edificios
+u_fix_lord_animation_stuck_movement_descr: Devuelve al señor a su postura erguida cuando deja de moverse o de destruir
+  un edificio. Normalmente podía quedarse inclinado hacia el suelo.
+u_laddermen: Mayor protección de los escaleros contra ataques a distancia
+u_laddermen_descr: '- Los escaleros mueren tras 12 flechas en lugar de 5.
+
+  - Mueren tras 5 impactos de ballesta o de hondero en lugar de 2.
+
+  - Cuestan 20 de oro en lugar de 4.'
+u_spearmen: Mayor protección de los lanceros contra ataques a distancia
+u_spearmen_descr: '- Los lanceros mueren tras 5 flechas en lugar de 3.
+
+  - Sobreviven por poco a un virote de ballesta, en lugar de morir de un solo impacto.'
+u_spearmen_run: Los lanceros corren por defecto en lugar de caminar
+u_spearmen_run_descr: Hace que los lanceros corran por defecto como los esclavos y los soldados con maza.
+u_tanner_fix: Evitar que los curtidores vuelvan sin una vaca
+u_tanner_fix_descr: Los curtidores ya no vuelven con las manos vacías si otro curtidor se lleva la vaca elegida.
+  Ahora esperan un poco y eligen otra vaca.
+tags.balance: Equilibrio
+tags.bugfixes: Correcciones
+tags.ai: IA
+tags.economy: Economía

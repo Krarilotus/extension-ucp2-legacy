@@ -1,7 +1,7 @@
 # The name of your module
 name: ucp2-legacy
 display-name: UCP2-Legacy
-version: 2.15.2
+version: 2.15.3
 default: true
 game: [SHC==1.41, SHCE==1.41]
 dependencies:
@@ -9,3 +9,10 @@ dependencies:
   map-extensions: "^1.0.0"
 meta:
   version: 1.0.0
+tags:
+- balance
+- bugfixes
+- ai
+- economy
+family:
+- name: ucp2-legacy
