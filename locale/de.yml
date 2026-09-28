@@ -431,3 +431,49 @@ ui_welcometext: "Dies ist ein inoffizieller Patch für Stronghold Crusader.\nDas
   \  \n[PodeCaradox](https://github.com/PodeCaradox)  \n[GRhin](https://www.twitch.tv/grhin)\
   \  \n[Heroesflorian](https://github.com/Heroesflorian)"
 ui_wrongpath: Stronghold Crusader konnte nicht im angegebenen Pfad gefunden werden!
+ai: KI
+balance_changes: Balance-Änderungen
+bugfixes: Fehlerkorrekturen
+fixes: Korrekturen
+improvements: Verbesserungen
+misc: Sonstiges
+qol: Komfort
+ai_housing_descr: 'Lässt KI-Fürsten ihre Wohnhäuser sinnvoller verwalten: Die Kriterien zum Beenden des Hausbaus
+  lassen sich anpassen, und das Abreißen von Wohnhäusern wird verhindert. Dadurch können die KIs zu Spielbeginn
+  meist schneller wachsen und neue Arbeiter erhalten.'
+ai_build_housing: Freien Wohnraum für neue Bauern anpassen
+ai_build_housing_descr: 'Legt anhand der noch freien Plätze für neue Bauern fest, wann KIs keine weiteren Häuser
+  bauen. Im Originalspiel ist dieser Wert 0: Neue Häuser werden erst gebaut, wenn alle vorhandenen bewohnt sind.
+
+  Diese Option verhindert außerdem, dass KIs ihre zusätzlichen Häuser abreißen.'
+ai_campfire_housing: Platz für untätige Bauern am Lagerfeuer anpassen
+ai_campfire_housing_descr: 'Legt die maximale Anzahl von Bauern am Lagerfeuer einer KI fest, ab der sie keine weiteren
+  Häuser baut.
+
+  Diese Option verhindert außerdem, dass KIs ihre zusätzlichen Häuser abreißen.'
+ai_delete_housing: Diese Option verhindert ausschließlich, dass KIs ihre zusätzlichen Häuser abreißen.
+ai_demolish_descr: Fühlen sich KIs bedrängt, reißen sie Wirtschafts- oder Befestigungsgebäude ab, um schnell Geld
+  für Truppen zu erhalten. Dies geschieht manchmal ohne erkennbaren Grund und ist häufig eine schlechte Strategie.
+  Die folgenden Arten des Gebäudeabrisses zur Geldbeschaffung können deaktiviert werden.
+ai_attacktarget_descr: 'Überschreibt, wie alle KI-Fürsten ihre Angriffsziele auswählen.
+
+  HINWEIS: Mit dem Modul aiSwapper lässt sich das Zielwahlverhalten einzelner KIs genauer über ihre AIC-Einstellungen
+  festlegen.'
+o_fast_placing_descr: 'Bei gedrückter linker Maustaste werden folgende Gebäude fortlaufend platziert:
+
+  Mördergruben, Holzfällerhütten, gute und schlechte Dinge, Mühlen, Brunnen, Bäckereien und Wohnhäuser.'
+o_shfy_descr: 'Passt die aufgeführten Aspekte an die Balance von Stronghold 1 an.
+
+  Achtung: Jede Änderung betrifft auch die KI-Fürsten und kann sie im schlimmsten Fall handlungsunfähig machen!'
+ui.red: Rot
+ui.orange: Orange
+ui.yellow: Gelb
+ui.blue: Blau
+ui.black: Schwarz
+ui.purple: Violett
+ui.lightblue: Hellblau
+ui.green: Grün
+tags.balance: Balance
+tags.bugfixes: Fehlerkorrekturen
+tags.ai: KI
+tags.economy: Wirtschaft

@@ -380,3 +380,49 @@ ui_welcometext: "Ez egy nem hivatalos patch a Stronghold Crusader játékhoz.\nA
   \  \n[PodeCaradox](https://github.com/PodeCaradox)  \n[GRhin](https://www.twitch.tv/grhin)\
   \  \n[Heroesflorian](https://github.com/Heroesflorian)"
 ui_wrongpath: A Stronghold Crusader nem található a megadott elérési útvonalon!
+ai: MI
+balance_changes: Egyensúlymódosítások
+bugfixes: Hibajavítások
+fixes: Javítások
+improvements: Fejlesztések
+misc: Egyéb
+qol: Kényelmi funkciók
+ai_housing_descr: 'Az MI-urak okosabban kezelik a lakóházaikat: módosíthatók a házépítés leállításának feltételei,
+  és megakadályozható a házak lebontása. Így az MI általában gyorsabban terjeszkedik és hamarabb jut új dolgozókhoz
+  a játék elején.'
+ai_build_housing: Szabad férőhelyek beállítása az új parasztoknak
+ai_build_housing_descr: 'A még szabad férőhelyek száma alapján határozza meg, mikor hagyja abba az MI a házépítést.
+  Az alapjátékban ez az érték 0, ezért az MI csak akkor épít új házat, ha az összes meglévő megtelt.
+
+  Ez a beállítás a felesleges házak lebontását is megakadályozza.'
+ai_campfire_housing: A tábortűznél várakozó parasztok helyének beállítása
+ai_campfire_housing_descr: 'Beállítja, legfeljebb hány paraszt lehet az MI tábortüzénél, mielőtt az MI leállítja
+  a további házépítést.
+
+  Ez a beállítás a felesleges házak lebontását is megakadályozza.'
+ai_delete_housing: Ez a beállítás kizárólag az MI felesleges házainak lebontását akadályozza meg.
+ai_demolish_descr: Ha az MI veszélyben érzi magát, gazdasági vagy védelmi épületeket bont le, hogy gyorsan pénzt
+  szerezzen katonákra. Ez néha látható ok nélkül is megtörténik, és gyakran rossz stratégia. Az alábbi, pénzszerzés
+  céljából végzett bontások kikapcsolhatók.
+ai_attacktarget_descr: 'Felülírhatod, hogyan választanak támadási célpontot az MI-urak.
+
+  MEGJEGYZÉS: Az aiSwapper modullal az egyes MI-k célpontválasztása részletesebben is beállítható az AIC-paramétereken
+  keresztül.'
+o_fast_placing_descr: 'A bal egérgomb nyomva tartásával folyamatosan helyezhetők el a következő építmények:
+
+  gyilkos vermek, favágókunyhók, jó és rossz dolgok, malmok, kutak, pékségek és kunyhók.'
+o_shfy_descr: 'A felsorolt jellemzőket a Stronghold 1 egyensúlyához igazítja.
+
+  Figyelem: minden változtatás az MI-urakat is érinti, és a legrosszabb esetben működésképtelenné teheti őket!'
+ui.red: Piros
+ui.orange: Narancssárga
+ui.yellow: Sárga
+ui.blue: Kék
+ui.black: Fekete
+ui.purple: Lila
+ui.lightblue: Világoskék
+ui.green: Zöld
+tags.balance: Egyensúly
+tags.bugfixes: Hibajavítások
+tags.ai: MI
+tags.economy: Gazdaság

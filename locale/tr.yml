@@ -1,0 +1,265 @@
+ui.red: Kırmızı
+ui.orange: Turuncu
+ui.yellow: Sarı
+ui.blue: Mavi
+ui.black: Siyah
+ui.purple: Mor
+ui.lightblue: Açık mavi
+ui.green: Yeşil
+Name: Gayriresmî Crusader Yaması
+ai: Yapay zekâ
+balance_changes: Denge değişiklikleri
+bugfixes: Hata düzeltmeleri
+fixes: Düzeltmeler
+improvements: İyileştirmeler
+misc: Diğer
+qol: Kullanım kolaylığı
+ai_housing: Daha akıllı konut yönetimi
+ai_housing_descr: Yapay zekâ lordlarının yeni ev yapmayı bırakma koşullarını ayarlar ve evleri yıkmalarını engelleyerek
+  konutları daha akıllıca yönetmelerini sağlar. Bu, genellikle oyun başında daha hızlı genişlemelerine ve daha çabuk
+  yeni işçi elde etmelerine yardımcı olur.
+ai_build_housing: Yeni köylüler için boş konut alanını ayarla
+ai_build_housing_descr: 'Yapay zekânın ne zaman ev yapmayı bırakacağını, yeni köylüler için kalan boş yerlere göre
+  belirler. Özgün oyunda bu değer 0’dır; tüm evler dolmadan yeni ev yapılmaz.
+
+  Bu seçenek ayrıca yapay zekânın fazla evlerini yıkmasını engeller.'
+ai_campfire_housing: Kamp ateşindeki boşta köylüler için alanı ayarla
+ai_campfire_housing_descr: 'Yapay zekânın ev yapmayı bırakmasından önce kamp ateşinde bulunabilecek en fazla köylü
+  sayısını ayarlar.
+
+  Bu seçenek ayrıca yapay zekânın fazla evlerini yıkmasını engeller.'
+ai_delete_housing: Bu seçenek yalnızca yapay zekânın fazla evlerini yıkmasını engeller.
+ai_demolish: Para için bina yıkma
+ai_demolish_descr: Yapay zekâ kendini baskı altında hissedince birlikler için hızlı para elde etmek amacıyla ekonomi
+  veya savunma binalarını yıkar. Bazen görünür bir neden olmadan tetiklenir ve bu binaları yıkmak çoğu zaman kötü
+  bir stratejidir. Para için yapılan aşağıdaki yıkım türleri devre dışı bırakılabilir.
+ai_demolish_eco: Ekonomi binaları
+ai_demolish_trapped: Ulaşılamayan binalar
+ai_demolish_walls: Savunma binaları
+ai_access: Ulaşılamayan binaları yıkma
+ai_access_descr: Yapay zekâ, işçinin ulaşamadığı binalarını sürekli yıkıp yeniden yapmaz.
+ai_addattack: Her saldırı dalgasındaki ordu artışını değiştir
+ai_addattack_descr: Özgün oyunda her yapay zekâ lordu, her ana saldırıda ordusuna 5 birlik ekler. Bu miktarı burada
+  ayarlayabilirsiniz.
+ai_addattack_alt_descr: 'Alternatif olarak ordu artışını, her lord için farklı olan ilk ordu büyüklüğünün bir yüzdesi
+  olarak belirleyebilirsiniz.
+
+  Örnek: ölçek çarpanı = 0.5
+
+  Sultan’ın saldırı birlikleri = 10, 15, 20, 25, ...
+
+  Selahaddin’in saldırı birlikleri = 50, 75, 100, 125, ...'
+ai_assaultswitch: Yapay zekânın kuşatma sırasında hedef değiştirmesini engelle
+ai_assaultswitch_descr: Hedef seçimi en zengin veya en zayıf düşmana ayarlanmış yapay zekâlar, bazen kuşatmanın
+  ortasında hedefi yeniden değerlendirip birliklerini haritanın öbür ucuna gönderiyordu. Bu düzeltmeyle önceden
+  seçtikleri hedefte kalırlar.
+ai_attacklimit: Yapay zekânın saldırı birliği toplama sınırını ayarla
+ai_attacklimit_descr: 'Yapay zekânın ana ordusu, ilk saldırısının büyüklüğü artı bu değerle sınırlıdır; özgün oyunda
+  ek değer 200’dür. Sınıra ulaşınca birlik toplamayı ve ana saldırılar göndermeyi bırakır.
+
+  NOT: Çok yüksek değerler uzun oyunlarda toplam birim sınırına ulaşılmasına ve yeni köylülerin ortaya çıkamamasına
+  neden olabilir.'
+ai_attacktarget: Yapay zekâ saldırı hedeflerini değiştir
+ai_attacktarget_descr: 'Tüm yapay zekâ lordlarının saldırı hedeflerini nasıl seçtiğini değiştirebilirsiniz.
+
+  NOT: aiSwapper modülüyle, her yapay zekânın hedef seçimini AIC içinde daha ayrıntılı ayarlamak mümkündür.'
+ai_attacktarget_nearest: En yakın düşman
+ai_attacktarget_richest: En zengin düşman
+ai_attacktarget_weakest: En zayıf düşman
+ai_attackwave: Daha etkin yapay zekâ saldırıları
+ai_attackwave_descr: 'Özgün oyunda yapay zekâ her sur parçasına yalnızca bir asker gönderir. Birlik sayısı kullanılabilir
+  sur parçalarından fazlaysa kalan ordu bir parçanın boşalmasını bekler.
+
+  Bu seçenek, surları daha hızlı yıkmak için her parçaya birden fazla birlik gönderilmesini ve daha önce göz ardı
+  edilen bina ve kulelere saldırılmasını sağlar.
+
+  Ayrıca surlar aşıldığında yapay zekâ kalan tüm saldırı birliklerini düşman kalesine gönderir.
+
+  Surda gedik açılmadan önce kale dışındaki binalara saldıran birlik yüzdesini aşağıdan ayarlayın.'
+ai_buywood: Ek odun satın al
+ai_buywood_descr: Özgün oyunda yapay zekâ bina yaparken yalnızca o bina için gereken miktarda odun alır. Bu, odun
+  tüketen silah üretimi için pay bırakmaz. Sorunu önlemek amacıyla bu durumda 2 ek odun satın alınır.
+ai_defense: Kale savunucularını daha güvenilir biçimde yenile
+ai_defense_descr: Savunma devriyeleri hâlâ mevcutken yapay zekânın sur ve kulelerde eksilen birlikleri tamamlamasını
+  engelleyen hatayı düzeltir.
+ai_fix_crusader_archers_pitch: Avrupalı okçuların zifti yakmasını sağla
+ai_fix_crusader_archers_pitch_descr: Yapay zekânın Avrupalı okçuları, düşmanlara karşı savunma yaparken Arap okçular
+  gibi zifti ateşe verir.
+ai_fix_laddermen_with_enclosed_keep: Çevrili yapay zekâların merdivencileri kullanmasını sağla
+ai_fix_laddermen_with_enclosed_keep_descr: Yapay zekâ, kendi kalesi çevrili olduğunda merdivencilerle düşman surlarına
+  saldırmayı bırakmaz.
+ai_nosleep: Üretim tesislerinin uyku modunu devre dışı bırak
+ai_nosleep_descr: 'Yapay zekâ lordları, üretim için gereken bir kaynak tükenince ilgili üretim binalarını uykuya
+  alır. Örneğin Selahaddin’in unu bitince tüm fırınları durur.
+
+  Ancak işlenmekte veya taşınmakta olan mallar çoğu zaman hesaba katılmaz ve sürekli mal kaybı oluşur.
+
+  Buradan yapay zekânın uyku modunu tamamen kapatabilirsiniz.'
+ai_resources_rebuy: Yapay zekânın gerekli malları yeniden almasını iyileştir
+ai_resources_rebuy_descr: Yapay zekâ, altını olsa bile çoğu zaman malları yenilemez ve üretim zincirleri durur.
+  Bu seçenek, gerekli malları almadan önce stokların boş kalmasını beklediği süreyi kısaltır.
+ai_noflour_maxtime_descr: Yapay zekânın 2 un almasına kadar geçen süre; ayın on ikide biri cinsinden.
+ai_noiron_maxtime_descr: Yapay zekânın 2 demir almasına kadar geçen süre; ayın on ikide biri cinsinden.
+ai_nowood_maxtime_descr: Yapay zekânın 5 odun almasına kadar geçen süre; ayın on ikide biri cinsinden.
+ai_rebuild: Yapay zekâ onarımlarını iyileştir
+ai_rebuild_descr: Yapay zekâ, kule kalıntılarını ve hafif hasarlı surları yeniler. Ana binası kaybolmuş asker toplama
+  yapılarının toplanma alanlarının üzerine de yeniden inşa eder.
+ai_recruitinterval: Asker toplama hızını en yüksek değere ayarla
+ai_recruitinterval_descr: 'Tüm yapay zekâların asker toplama aralığını en düşük değere getirir; özgün oyundaki Sıçan
+  ve Richard kadar hızlı asker toplarlar.
+
+  NOT: aiSwapper modülü, her yapay zekânın AIC üzerinden asker toplama hızını daha ayrıntılı ayarlayabilir.'
+ai_recruitstate_initialtimer: Yapay zekânın AIC’ye göre asker toplamaya başlamasına kadar geçen ilk süreyi ayarla
+ai_recruitstate_initialtimervalue_descr: Savunma birliği havuzu dolmadığı sürece yapay zekânın yalnızca savunucu
+  topladığı ay sayısını ayarlar. Özgün oyunda bu dönem 6 aydır.
+ai_tethers: Öküz bağlama yerlerini yapay zekâ lordu başına 10 ile sınırla
+ai_tethers_descr: Yapay zekâ normalde her yeni taş ocağı için yeni bir öküz bağlama yeri yapar; lord başına normal
+  sınır olan 10’u aşsa bile. Bunların birikmesi konut sınırına ulaşılmasına ve yeni köylülerin çıkamamasına yol
+  açabilir. Bu ayar, yeni taş ocağı yapıldığında ek bağlama yeri kurulmasını engeller.
+ai_towerengines: Yapay zekânın kulelerdeki kuşatma makinesi sınırını artır
+ai_towerengines_descr: Yapay zekâ normalde kulelerine en fazla üç mangonel ve üç balista kurar. Bu seçenek sınırı
+  her tür için 5’e çıkarır.
+fix_apple_orchard_build_size: Elma bahçesinin yerleştirme alanını küçült
+fix_apple_orchard_build_size_descr: Elma bahçesinin önizleme alanını, yerleştirildikten sonra kapladığı alana eşitler.
+  Bu yer kazandırır ve yapay zekânın vaha çimlerinde uygun alan bulmasını kolaylaştırır.
+o_armory_marketplace_weapon_order_fix: Pazar ve cephanelikteki silah sırasını eşitle
+o_armory_marketplace_weapon_order_fix_descr: Pazardaki silah simgelerini cephanelikteki sıraya getirir. Hem pazar
+  sayfalarını hem de ana kategorideki görünümü kapsar.
+o_change_siege_engine_spawn_position_catapult: Kuşatma makinelerini çadırlarının merkezinde oluştur
+o_change_siege_engine_spawn_position_catapult_descr: 'Özgün oyunda kuşatma makineleri inşa çadırlarının sağ üstünde
+  oluşur. Bu seçenek onları çadırın ortasına yerleştirir.
+
+  Ancak çadırın kendisi, AIV düzenleyicisinde belirtilen konuma yine tam ortalanmaz.'
+o_default_multiplayer_speed: Varsayılan çok oyunculu hızını ayarla
+o_default_multiplayer_speed_descr: Varsayılan çok oyunculu hızını belirler. Oyun yüklenirken de normal 40 hızı yerine
+  bu değer uygulanır.
+o_disable_border_scrolling: İmleçle ekran kenarında kaydırmayı kapat
+o_disable_border_scrolling_descr: 'İmleci ekran kenarına götürmek kamerayı hareket ettirmez.
+
+  NOT: Bu seçenek, başka işler için fareyi pencerenin dışına çıkardığınız pencereli kullanım için tasarlanmıştır.'
+o_engineertent: Kuşatma çadırlarını sürekli yerleştir
+o_engineertent_descr: Çadır yerleştirildikten sonra makine seçiminin otomatik kaldırılmasını önleyerek kuşatma makinelerini
+  art arda yerleştirmenizi sağlar.
+o_fast_placing: Yaygın binaları sürekli yerleştir
+o_fast_placing_descr: 'Sol fare düğmesini basılı tutarak şu yapıları sürekli yerleştirebilirsiniz:
+
+  ölüm çukurları, oduncular, iyi ve kötü şeyler, değirmenler, kuyular, fırınlar ve evler.'
+o_firecooldown: Yangın söndürüldükten sonraki yanmazlık süresini ayarla
+o_firecooldown_descr: Söndürülen binaların tekrar tutuşamayacağı süre. Özgün oyunda 2000 oyun adımıdır; 2,5 aya
+  eşittir.
+o_fix_baker_disappear: Fırıncıların kaybolmasını düzelt
+o_fix_baker_disappear_descr: Fırıncılar, hedefledikleri depoda un bulamadıklarında artık kaybolmaz.
+o_fix_fletcher_bug: Yay ustalarının verimsiz yollarını düzelt
+o_fix_fletcher_bug_descr: Yay ustaları, yayı veya arbaleti cephaneliğe bıraktıktan sonra atölyeye dönmek yerine
+  sonraki üretim için odun almaya doğrudan depoya gider.
+o_fix_ladderclimb: Merdivene çıkan birlikler hareket hedefini korusun
+o_fix_ladderclimb_descr: Birlikler merdivene çıktıktan sonra ulaştıkları sur karesinde takılıp beklemek yerine ilk
+  hedeflerini hatırlamaya devam eder.
+o_fix_map_sending: Çok oyunculuda harita göndermeyi etkinleştir
+o_fix_map_sending_descr: Gönderilen harita adını kısaltarak harita gönderimini yeniden mümkün kılar.
+o_fix_moat_digging_unit_disappearing: Hendek kazan birliklerin kaybolmasını düzelt
+o_fix_moat_digging_unit_disappearing_descr: 'Birliklerin hendek kazarken kaybolmasına neden olan hatayı düzeltir.
+
+  NOT: Yürünemeyen zemindeyken hareket emri verirseniz birlikler yine kaybolabilir.'
+o_fix_rapid_deletion_bug: Hızlı yıkımla kaynak çoğaltmayı düzelt
+o_fix_rapid_deletion_bug_descr: Hızlı otomatik tıklama, aynı binayı artık birden fazla kez yıkmaz. Böylece yıkımdan
+  oyunun öngördüğünden fazla kaynak geri alınmaz.
+o_freetrader: Ücretsiz pazar
+o_freetrader_descr: Pazarı kaynak maliyetsiz yaparak yapay zekânın pazar kuracak kaynak bulamadığı için takılmasını
+  önler. Çok oyunculuda pazar unutulduğunda baştan başlama veya odun için bina yıkma ihtiyacını ortadan kaldırır.
+o_gamespeed: Genişletilmiş oyun hızı sınırları
+o_gamespeed_descr: 'Oyun hızını şu aralıklarla değiştirmeyi sağlar:
+
+  - 10–90 arasında 5’er.
+
+  - 90–200 arasında 10’ar.
+
+  - 200–1000 arasında 100’er.
+
+  Yeni değerler yalnızca oyun sırasında + ve - tuşlarıyla kullanılabilir; oyun menüsündeki kaydırıcı değişmez.'
+o_healer: Eczacı aynı zamanda şifacı olarak çalışsın
+o_healer_descr: 'Eczacı, yaralı askerleri, kuşatma makinelerini, sivilleri ve hayvanları etkin biçimde arayıp iyileştirir;
+  en yakın hedeflerden başlar. Her iyileştirme animasyonu, bir mızrakçının sağlığının yaklaşık üçte birini yeniler.
+  Bahçelerde gezinme ve veba bulutlarını inceleme görevleri değiştirilmez.
+
+  Yalnızca kale içinde amaçsız gezinme, çevrede yaralı kalmayana kadar atlanır.'
+o_increase_path_update_tick_rate: Kullanılabilir yolları daha sık denetle
+o_increase_path_update_tick_rate_descr: 'Özgün oyunda yeni yollar 200 oyun adımında bir denetlenir; bu, kapı veya
+  kule yıkıldıktan sonra birliklerin kaleye hemen girmesini sık sık geciktirir.
+
+  Aralığı 50 oyun adımına indirerek birliklerin yeni yolları daha çabuk fark etmesini sağlar.'
+o_keys: Kamerayı WASD ile hareket ettir ve hızlı kaydı etkinleştir
+o_keys_descr: 'Kamera WASD ile hareket ettirilebilir. Ctrl+S hızlı kaydeder, Ctrl+L hızlı yükler.
+
+  NOT: Bu seçenekle harita açıklaması yazmak ve A tuşuyla cephaneliği seçmek uygulanamaz hâle gelir.'
+o_moatvisibility: Planlanan hendeği her zaman göster
+o_moatvisibility_descr: Hendek aracı seçili değilken veya hiçbir birlik seçilmemişken bile tamamlanmamış hendek
+  planını gösterir.
+o_onlyai: İzleyici modunu etkinleştir [hata olabilir]
+o_onlyai_descr: İnsan oyuncuyu ilk yuvadan çıkararak en fazla 8 yapay zekâ arasındaki oyunları müdahalesiz izlemenizi
+  sağlar. Kayıtlar bu modda doğru yüklenir; ancak kayıtta insan oyuncu varsa kontrol edilemez. Bazen haritanın her
+  yerinde rastgele nesnelerin belirdiği bir hata oluşur. Bu yalnızca görseldir; kaydedip görevi bitirerek ve kaydı
+  yeniden yükleyerek giderilebilir.
+o_override_identity_menu: Kimlik ayarlama menüsüne yeni özellikler ekle
+o_override_identity_menu_descr: 'Normal türdeki çarpışmalarda kimlik ayarlama menüsüne yakın ve uzak dövüş birimi
+  seçimi ekler.
+
+  NOT: Başlangıç birliklerini daha fazla değiştirmek için startResources modülünü kullanabilirsiniz.'
+o_playercolor: Bu yuvanın rengini ilk yuvayla değiştir
+o_playercolor_descr: Oyuncuya istediği rengi vermek için diğer yuvanın rengi ile kırmızıyı değiştirir. Burada kırmızıyı
+  seçmenin etkisi yoktur.
+o_remove_right_click_context_menu: Sağ tık bağlam menüsünü kaldır
+o_remove_right_click_context_menu_descr: Haritayı döndürme, surları alçaltma, yakınlaştırma ve düzleştirme seçeneklerini
+  sunan sağ tık menüsünü kaldırır.
+o_responsivegates: Kapıların otomatik tepkisini hızlandır
+o_responsivegates_descr: 'Kapılar çoğu zaman yapay zekâyı içeride tutuyor ve geçişi fazla uzun kapatıyordu. Artık
+  düşman yaklaşınca daha geç kapanır, tehlike geçince daha hızlı açılır.
+
+  Algılama mesafesi 200’den 140’a, düşman görülmedikten sonra yeniden açılma süresi 1200’den 100 oyun adımına iner.'
+o_restore_arabian_engineer_speech: Arap mühendislerin seslerini geri getir
+o_restore_arabian_engineer_speech_descr: Arap lordu kullanıldığında mühendisler, başlangıçta kaydedilmiş Arap seslerini
+  kullanır.
+o_shfy: Stronghold 1’e uyarla
+o_shfy_descr: 'Listelenen özellikleri Stronghold 1 dengesine uyarlar.
+
+  Dikkat: Her değişiklik yapay zekâ lordlarını da etkiler ve en kötü durumda onları işlevsiz bırakabilir.'
+o_shfy_beer: Biranın popülerlik bonusu
+o_shfy_peasantspawnrate: Kamp ateşinde köylü ortaya çıkma hızı
+o_shfy_religion: Kilise ve katedralin popülerlik bonusu
+o_shfy_resourcequantity: Teslim edilen kaynak miktarı
+o_stop_player_keep_rotation: Oyuncunun kalesini harita merkezine doğru çevir
+o_stop_player_keep_rotation_descr: 'Oyuncu kaleleri, yapay zekâ kaleleri gibi yönlendirilir; kamp ateşi haritanın
+  dış kenarına bakar.
+
+  NOT: Diğer binalar döndürülmez. Girişleri ve toplanma alanları güneybatı köşesine bakmaya devam eder.'
+o_xtreme: Crusader Extreme’deki sihir çubuğunu kaldır
+u_arabwall: Arap kılıçlı askerler surları daha hızlı yıksın
+u_arabwall_descr: Özgün oyunda Arap kılıçlı askerler surları diğer tüm yakın dövüş birliklerinden daha yavaş yıkar.
+  Bu seçenek yıkım hızlarını yaklaşık iki katına çıkarır ve onları mızrakçıların biraz üstüne taşır.
+u_arabxbow: Arap kılıçlı askerlerin arbalet oklarına dayanıklılığını artır
+u_arabxbow_descr: Arap kılıçlı askerler 3 yerine 6 arbalet isabetinden sonra ölür.
+u_fireballistafix: Ateş balistaları keşişleri ve tünelcileri otomatik hedeflesin
+u_fix_applefarm_blocking: Elma bahçesi işçisinin engellenmesini düzelt
+u_fix_applefarm_blocking_descr: Bahçenin sol üst tarafına bina yerleştirmek, elma toplayan işçiyi artık engellemez.
+u_fix_lord_animation_stuck_movement: Bina yıkımından sonra lord animasyonunu sıfırla
+u_fix_lord_animation_stuck_movement_descr: Lord hareket etmeyi veya bina yıkmayı bıraktığında dik duruşuna döner.
+  Normalde yere eğilmiş hâlde takılı kalabiliyordu.
+u_laddermen: Merdivencilerin uzak saldırılara dayanıklılığını artır
+u_laddermen_descr: '- Merdivenciler 5 yerine 12 ok isabetinde ölür.
+
+  - 2 yerine 5 arbalet veya sapancı isabetinde ölür.
+
+  - 4 yerine 20 altına mal olur.'
+u_spearmen: Mızrakçıların uzak saldırılara dayanıklılığını artır
+u_spearmen_descr: '- Mızrakçılar 3 yerine 5 ok isabetinde ölür.
+
+  - Tek bir arbalet okuyla ölmek yerine çok az canla hayatta kalır.'
+u_spearmen_run: Mızrakçılar varsayılan olarak yürümek yerine koşsun
+u_spearmen_run_descr: Mızrakçıların köleler ve gürzlü askerler gibi varsayılan olarak koşmasını sağlar.
+u_tanner_fix: Tabakçıların ineksiz dönmesini düzelt
+u_tanner_fix_descr: Başka bir tabakçı hedefledikleri ineği aldığında artık ineksiz geri dönmezler. Biraz bekleyip
+  başka bir inek seçerler.
+tags.balance: Denge
+tags.bugfixes: Hata düzeltmeleri
+tags.ai: Yapay zekâ
+tags.economy: Ekonomi
