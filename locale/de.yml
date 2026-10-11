@@ -477,3 +477,6 @@ tags.balance: Balance
 tags.bugfixes: Fehlerkorrekturen
 tags.ai: KI
 tags.economy: Wirtschaft
+u_arabwall: "Arabische Schwertkämpfer zerstören Mauern schneller"
+u_arabwall_descr: "Im Originalspiel zerstören arabische Schwertkämpfer Mauern langsamer als jede andere Nahkampfeinheit. Diese Option verdoppelt ihre Geschwindigkeit ungefähr, sodass sie Mauern etwas schneller als Speerträger zerstören."
+u_arabxbow: "Mehr Schutz für arabische Schwertkämpfer gegen Armbrustbolzen"

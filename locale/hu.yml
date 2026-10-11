@@ -426,3 +426,6 @@ tags.balance: Egyensúly
 tags.bugfixes: Hibajavítások
 tags.ai: MI
 tags.economy: Gazdaság
+u_arabwall: "Az arab kardforgatók gyorsabban rombolják a falakat"
+u_arabwall_descr: "Az alapjátékban az arab kardforgatók minden más közelharci egységnél lassabban rombolják a falakat. Ez a beállítás nagyjából megduplázza a sebességüket, így kissé gyorsabbak lesznek a lándzsásoknál."
+u_arabxbow: "Az arab kardforgatók erősebb védelme a számszeríjlövedékek ellen"
