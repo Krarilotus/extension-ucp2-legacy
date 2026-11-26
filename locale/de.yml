@@ -56,7 +56,7 @@ ai_fix_laddermen_with_enclosed_keep: Korrigiert Leiternutzung
 ai_fix_laddermen_with_enclosed_keep_descr: Mit diesem Fix können Belagerungseinheiten von KIs, deren Bergfried abgeschlossen ist, weiterhin die Leitern der Leiterträger nutzen (betrifft vanilla nur die Schlange).
 ai_nosleep: Schlafenlegen bei Rohstoffmangel deaktivieren
 ai_nosleep_descr: Normalerweise legt die KI ihre Verarbeitungsgebäude schlafen, sobald der nötige Rohstoff nicht mehr im Lager vorhanden ist. Dabei wird keine Rücksicht genommen ob Produkte verloren gehen die z.B. gerade zur Waffenkammer gebracht werden. Diese Funktion kann hier komplett deaktiviert werden.
-ai_resources_rebuy: Improve AI restocking of needed goods
+ai_resources_rebuy: KI-Nachkauf benötigter Waren verbessern
 ai_resources_rebuy_descr: Die KI kauft oft keine Waren nach, selbst wenn sie genug Gold hat, sodass ihre Produktionsketten leerlaufen. Diese Option verkürzt die Wartezeit bei leerem Lager, bis die KI benötigte Waren nachkauft.
 ai_noflour_maxtime_descr: Zeit in Zwölftelmonaten, bis die KI 2 Mehl nachkauft.
 ai_noiron_maxtime_descr: Zeit in Zwölftelmonaten, bis die KI 2 Eisen nachkauft.
@@ -173,78 +173,3 @@ ui.black: Schwarz
 ui.purple: Violett
 ui.lightblue: Hellblau
 ui.green: Grün
-ai_attacktarget_nearest_descr: ' '
-ai_attacktarget_richest_descr: ' '
-ai_attacktarget_weakest_descr: |-
-  Mit dieser Einstellung suchen sich die KI-Lords alle auf die selbe Weise,
-  das Ziel für ihren nächsten Angriff. Dies verhindert, dass die Truppen mittem im laufenden Angriff umschwenken oder an Gegnerburgen vorbeigeschickt werden zum Sammeln.
-ai_demolish_eco_descr: Wenn die KI sich bedrängt fühlt und schnell an Geld für Truppen kommen will, reißt sie gerne mal ihre komplette Wirtschaft oder Befestigungsanlagen ein. Manchmal wird dieses Feature aber auch völlig ohne scheinbaren Grund ausgelöst und kann darum hier ausgestellt werden.
-ai_demolish_trapped_descr: ' '
-ai_demolish_walls_descr: ' '
-aiv_cli_prompt: Modifizierte AIVs erkannt. Schreibe 'delete', um sie zu löschen oder einen Ordnernamen, um ein Backup zu erstellen.
-aiv_prompt: Modifizierte AIVs erkannt. Wollen Eure Lordschaft jetzt ein Backup anlegen?
-backup_aiv_select: Backup AIV Ordner auswählen
-build_housing_descr: Die Differenz aus aktueller und maximal möglicher Bevölkerung, ab der KIs keine Häuser mehr bauen. In Vanilla ist diese 0. Zudem deaktiviert diese Option das Abreißen von Häusern für KIs.
-campfire_housing_descr: Wenn mehr als diese Anzahl an freien Bauern am Lagerfeuer sitzen, baut die KI keine Häuser mehr. Zudem deaktiviert diese Option das Abreißen von Häusern für KIs.
-delete_housing: Kein Abreißen von Häusern der KIs
-delete_housing_descr: Mit dieser Option reißen KIs keine Häuser mehr ab.
-install_abort: Installation abgebrochen
-install_abort_io: Installation abgebrochen. Dateien mit dem selben Namen waren bereits im gewählten Ordner vorhanden. Bitte wählen Eure Lordschaft einen anderen Ordner aus.
-o_fast_placing_all: all builds
-o_fast_placing_all_descr: Hold left mouse button down to place buildings.
-o_fast_placing_common: killing pit, pitch ditch, woodcutter, good & bad things, mill, water pot, bakery, hovel)
-o_fast_placing_common_descr: ' '
-o_quicksave: Enable quicksaves via CTRL-S and CTRL-L
-o_quicksave_descr: CTRL-S can be used to perform a quicksave. CTRL-L will load the same save
-o_seed_modification_possibility: Ermögliche & Speichere Zufallsstartwerte
-o_seed_modification_possibility_descr: Mit dieser Option werden Zufallsstartwerte von Spielen gespeichert, für die keiner im gameseeds Ordner gesetzt wurde. So können diese nachträglich in 'live' umbenannt werden um das Spiel zu wiederholen.
-o_seed_modification_possibility_only_set: Ermögliche Festlegung eines Zufallsstartwertes
-o_seed_modification_possibility_only_set_descr: 'Das Setzen eines Startwertes für den Zufallszahlen Generator ermöglicht es für KI Spiele immer den gleichen Verlauf zu nehmen. Für Spiele mit menschlichen Spielern und KI können feste Startbedingungen ermöglicht werden (z.B. die gleiche Auswahl von AIV Dateien für die KI). Um den Zufallsstartwert zu setzen, erstelle eine Datei mit dem Namen ''live'', welche eine ganze Zahl enthält im Ordner Installationsverzeichnis/gameseeds. ACHTUNG: Vor Beginn eines wiederholbaren Scharmützels muss das Spiel neu gestartet werden!'
-o_seed_modification_possibility_title: Manipuliere Zufallszahlengenerator
-o_shfy_beer_descr: ' '
-o_shfy_peasantspawnrate_descr: ' '
-o_shfy_religion_descr: ' '
-o_shfy_resourcequantity_descr: 'Passt aufgelistete Aspekte an Stronghold 1 an. Achtung: Jede Annpassung nimmt Einfluss auf die KI Lords, schlimmstenfalls werden diese nutzlos!'
-o_wasd: Enable using WASD to move around
-o_wasd_descr: WASD can be used to move around in addition to the existing arrow keys
-o_xtreme_descr: Entfernt die Magie-Leiste in Crusader Extreme.
-u_ArabWall: Arab. Schwertkämpfer reißen Mauern schneller ein
-u_ArabWall_descr: In Vanilla reißen Arabische Schwertkämpfer Mauern am langsamsten ein unter den Nahkämpfern. Die Einreißgeschwindigkeit wird hiermit für sie ca. verdoppelt, sodass sie dabei knapp über Lanzenträgern sind.
-u_ArabXBow: Erhöhter Schutz von Arab. Schwertkämpfer vor Armbrüsten
-u_ballistamonk: Feuerballisten schießen auf Mönche
-u_ballistamonk_descr: Lässt Feuerballisten automatisch auch auf Mönche schießen.
-u_fireballistafix_descr: Feuerballisten erkennen nun Mönche und Tunnelgräber als Feinde und schießen auf diese.
-u_jestermoveto_assassin: Stop the jester from visiting assassins
-u_jestermoveto_assassin_descr: The jester visits your units on the battlefield to cheer them up. Now it wont visit your invisible assassins anymore, showing everyone where they are!
-ui_AIC: AIC
-ui_AIV: AIV
-ui_Resource: Startgüter
-ui_SearchPath: ' Bitte wähle dein Installationverzeichnis:'
-ui_StartTroops: Starttruppen
-ui_accept: OK
-ui_aicExport: Export
-ui_aicExport_success: Erfolgreich exportiert.
-ui_aicHint: Exportiert die .aic-Datei aus dem Installer in das Crusader-Verzeichnis.
-ui_aicconflict: Konflikt und wird ignoriert
-ui_aicconvertprompt: AIC-Konvertierung
-ui_aicofferconvert: AIC-Datei in neuere Version konvertieren?
-ui_aicoldversion: Alte Version erkannt. Klicken Sie zum Konvertieren
-ui_aicselect: 'Bitte deaktivieren Sie zuerst andere AIC-Dateien. Die folgenden aic-Zeichen sind bereits ausgewählt: '
-ui_ailords: KI-Lords
-ui_back: Zurück
-ui_browsepath: Bitte wähle dein Stronghold Crusader - Installationsverzeichnis.
-ui_bugfix: Bugfixes
-ui_cancel: Abbrechen
-ui_chooseLang: Bitte wählen Sie eine Sprache für die Installation aus der unten aufgeführten Liste.
-ui_chooseLangTitle: Setup-Sprache
-ui_continue: Weiter
-ui_error: Fehler
-ui_finished: Fertig
-ui_install: Installieren
-ui_other: Sonstiges
-ui_search: Suchen
-ui_troops: Einheiten
-ui_uninstall: Deinstallieren
-ui_uninstalldone: Deinstallation abgeschlossen.
-ui_welcometext: "Dies ist ein inoffizieller Patch für Stronghold Crusader.\nDas Projekt ist Open-Source auf [GitHub](https://github.com/UnofficialCrusaderPatch/UnofficialCrusaderPatch) zu finden.\n\nPotenziell wird jede Crusader-Version unterstützt, die Änderungen wurden allerdings anhand der 1.41 Steam-Version hergeleitet.\nIm Falle von Versionsinkompatibilität wird der Setup Fehlermeldungen zeigen. Die installierte Patchversion wird unten links im Hauptmenü angezeigt.\nVor jeglichen Änderungen werden Backup-Dateien erstellt, die über den 'Deinstallieren'-Button oder manuell wiederhergestellt werden können.\n\nDas Team hinter dem inoffiziellen Patch\n\nErschaffer des UCP\n[Sh0wdown](https://github.com/Sh0wdown)\n\nProjektleitung\n[Kimberly Azula](https://github.com/ByBurton/)  \n[Krarilotus (Youtube)](https://www.youtube.com/channel/UCMXHqa2vmclSoSkuCu_q5rw)\n\nEntwickler\n[LordHansCapon](https://github.com/LordHansCapon)  \n[np123](https://github.com/patel-nikhil)  \n[J-T-de](https://github.com/J-T-de)\n[gynt](https://github.com/gynt)\n[Le spec](https://github.com/LeSpec)  \n[Chaf1812](https://github.com/Chaf1812)\n\nÜbersetzer\n[Lutel (YouTube)](https://www.youtube.com/user/MrLutel05) (Polnisch)  \n[Lolasik011](https://github.com/Lolasik011) (Russisch)  \n[Skysoul (e-mail)](mailto:theskysoul@vip.qq.com) (Chinesisch)\n[Liegav (YouTube)](https://www.youtube.com/channel/UCFqQMKfYgGb7iFKJagQl_wA) (Ungarisch)\n\nInhaltliche Beiträge\n[Evrey](https://github.com/Evrey) (aiv)  \n[Tatha](https://www.youtube.com/channel/UC4BrhBzHp1ymnczlkdKcSkg) (aiv,aic)  \n[PitchNeeded](https://github.com/PitchNeeded) (aiv)  \n[Xander10alpha (YouTube)](https://www.youtube.com/channel/UCYlyixfoKPcz-Ixi6Nc383Q) (aic)\n\nBesonderer Dank geht an\n[Firefly Studios](https://fireflyworlds.com/)  \nfür die Erstellung der Stronghold Serie\n\nUnd viele mehr\n[Udwin (YouTube)](https://www.youtube.com/user/UdwinLP)  \n[PodeCaradox](https://github.com/PodeCaradox)  \n[GRhin](https://www.twitch.tv/grhin)  \n[Heroesflorian](https://github.com/Heroesflorian)"
-ui_wrongpath: Stronghold Crusader konnte nicht im angegebenen Pfad gefunden werden!

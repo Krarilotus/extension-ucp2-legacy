@@ -54,7 +54,7 @@ ai_fix_laddermen_with_enclosed_keep: Javított létrahasználat
 ai_fix_laddermen_with_enclosed_keep_descr: Ezzel a hibajavítással azok az MI-k, akiknek a vártornyuk körül van zárva, továbbra is tudják az ostromegységeik használni a létrahordozók létráit (az eredeti játékban ez csak a Kígyót érinti).
 ai_nosleep: Ha nincs elég erőforrás, szünetel a munka deaktiválása
 ai_nosleep_descr: Általában az MI szünetelteti a munkát az ipari épületeinél, ha a szükséges erőforrás már nem áll rendelkezésére a raktárban. Eközben a termék kárba veszik amit pl. éppen a fegyverraktárba visznek. Ezt a funkciót itt teljesen ki lehet kapcsolni.
-ai_resources_rebuy: Improve AI restocking of needed goods
+ai_resources_rebuy: Az MI szükséges áruk utánpótlásának javítása
 ai_resources_rebuy_descr: Az MI sokszor akkor sem pótolja a nyersanyagokat, ha van rá aranya, így a termelési láncai leállnak. Ez az opció csökkenti az időt, amennyit az MI üres raktárnál vár a szükséges áruk újravásárlása előtt.
 ai_noflour_maxtime_descr: Idő 1/12 hónapban, amely után az MI 2 lisztet újravásárol.
 ai_noiron_maxtime_descr: Idő 1/12 hónapban, amely után az MI 2 vasat újravásárol.
@@ -177,95 +177,3 @@ ui.black: Fekete
 ui.purple: Lila
 ui.lightblue: Világoskék
 ui.green: Zöld
-ai_attacktarget_nearest_descr: ' '
-ai_attacktarget_richest_descr: ' '
-ai_attacktarget_weakest_descr: Ezzel a beállítással az MI Lordok a saját módjukon keresik meg a célpontot a következő támadásukhoz. Ez megakadályozza azt, hogy az egységek támadás közben célpontot változtassanak vagy az MI ne a másik ellenséges várhoz küldje gyülekezni a seregét.
-ai_buy: Javított piac elhelyezés az MI Lordoknak
-ai_buy_descr: |-
-  Az eredeti játékban egyes új MI Lordok nem helyezik jól el a piacot.
-  Az alábbi javítások lesznek ezentúl érvényesek:
-   - Frigyes és a Tábornok ezentúl vásárolnak fegyvert és páncélt
-   - Az Apát és az Emír ezentúl vásárolnak íjat
-   - Wazir ezentúl vásárol almát, mint Nizar és Emír
-ai_demolish_eco_descr: Ha az MI Lord sarokba szorítva érzi magát és gyorsan pénzt akar szerezni az egységekhez, előszeretettel rombolja le a teljes iparát vagy várépületeit. Néha ez az esemény láthatólag minden indok nélkül megtörténik és emiatt itt ki tudod kapcsolni.
-ai_demolish_trapped_descr: ' Ha az MI be van zárva és nem jutnak ki az egységei, lerombol mindent. Ezt itt tudod kikapcsolni. (pl. a játékos lerak egy épületet a várkapuja elé és nincs másik bejárata a várnak)'
-ai_demolish_walls_descr: ' '
-ai_moredef: Még több védekező egység Richárd, Patkány és Fülöp hercegnek
-ai_moredef_descr: |-
-  Az eredeti játékban Richárd, Patkány de leginkább Fülöpnek nagyon kevés védekező egysége volt a várfalakon, tornyokon. Ezzel a beállítással a távolsági harcosok száma a következőképpen változik meg:
-
-  Patkány: 20 -> 40
-  Richárd: 20 -> 40
-  Fülöp: 4 -> 32
-
-  Viszont figyelembe kell venni, hogy ezáltal a legelső támadásuk egy kicsivel később következik be.
-ai_recruitsleep: Deaktiválja minden MI Lordnak a toborzási szünetét
-aiv_cli_prompt: Módosított AIV fájlok észlelve. Írd be a 'delete' szót az eltávolításukhoz vagy adj meg egy mappa nevet, ahova a fájlok települnek.
-aiv_prompt: Módosított AIV fájlok észlelve. Szeretne egy biztonsági másolatot készíteni, uram?
-backup_aiv_select: Válaszd ki az AIV Backup mappát
-build_housing_descr: A jelenlegi és a maximális népességszám közötti különbség, amely felett az MI nem épít több házat. Az eredeti játékban ez a szám 0. Ha ez a beállítás be van jelölve, akkor az MI nem rombolja le a házakat.
-campfire_housing_descr: Parasztok száma a tábortűznél, mielőtt az MI nem épít több házat. Ha ez a beállítás be van jelölve, akkor az MI nem rombolja le a házakat.
-delete_housing: Az MI ne rombolja le a házakat.
-delete_housing_descr: Ha ez a beállítás be van jelölve, akkor az MI soha nem rombolja le a házakat.
-install_abort: Telepítés megszakítva
-install_abort_io: Telepítés megszakítva. Már léteznek ilyen nevű fájlok ebben a mappában. Kérjük válassz egy másik mappát és próbáld meg újra.
-o_fast_placing_all: all builds
-o_fast_placing_all_descr: Hold left mouse button down to place buildings.
-o_fast_placing_common: killing pit, pitch ditch, woodcutter, good & bad things, mill, water pot, bakery, hovel)
-o_fast_placing_common_descr: ' '
-o_quicksave: Enable quicksaves via CTRL-S and CTRL-L
-o_quicksave_descr: CTRL-S can be used to perform a quicksave. CTRL-L will load the same save
-o_seed_modification_possibility: Random játék seed-ek engedélyezése és mentése
-o_seed_modification_possibility_descr: Ez a beállítás elmenti a seed-et azon játékokból amikhez nem lett megadva live seed érték, nevezd át a kívánt seed-et tartalmazó szöveges fájlt 'live'-ra hogy a későbbiekben újra rekonstruálhasd a harcot.
-o_seed_modification_possibility_only_set: Megadott Random játék seed engedélyezése
-o_seed_modification_possibility_only_set_descr: 'A játék seed megadásával az MI harcoknak a kimenetele ugyanaz lesz, azonos pályabeállítások esetén. Játékos-MI harc esetén, ugyanazon kezdési feltételeket biztosítja a pályán (mint pl. az AIV kiválasztás). A játék seed megadásához, engedélyezd ezt a beállítást és hozz létre egy 6 darab számot tartalmazó ''live'' nevű szöveges fájlt a játék könyvtár/gameseeds mappában. FIGYELEM: Ez a beállítás csak a játék újraindítása után működik!'
-o_seed_modification_possibility_title: Random játék seed
-o_shfy_beer_descr: ' '
-o_shfy_peasantspawnrate_descr: ' '
-o_shfy_religion_descr: ' '
-o_shfy_resourcequantity_descr: 'A felsorolt szempontokat a Stronghold 1-hez igazítja. Vigyázat: Minden változtatás hatással van az MI Lordokra, a legrosszabb esetben haszontalanná teszi őket!'
-o_trooplimit: Megnövelt egység limit
-o_trooplimit_descr: "Az eredeti játékban az egységek száma egy játékosnak \n2400/játékosszám. Itt tudod megváltoztatni ezt a számot."
-o_wasd: Enable using WASD to move around
-o_wasd_descr: WASD can be used to move around in addition to the existing arrow keys
-o_xtreme_descr: Eltávolítja a Varázserő-sávot a Crusader Extreme kiegészítőben.
-u_ArabWall: Az arab szablyás gyorsabban rombolja le a várfalat
-u_ArabWall_descr: Az eredeti játékban az arab szablyás rombolja le a várfalat a leglassabban a közelharci egységek közül. A lerombolás sebessége ezentúl kb. megkétszereződik, így épphogy jobb lesz a lándzsás egységnél.
-u_ArabXBow: Megnövelt védelem az arab szablyás egységnek a számszeríj nyílvessző ellen
-u_ballistamonk: A tűzhajítógépek lőnek a szerzetesekre
-u_ballistamonk_descr: A tűzhajítógépek automatikusan lőnek a szerzetesekre is.
-u_fireballistafix_descr: A tűzhajítógépek most már ellenségként észlelik a szerzeteseket és az alagútásókat, mostantól lőnek rájuk.
-u_jestermoveto_assassin: Stop the jester from visiting assassins
-u_jestermoveto_assassin_descr: The jester visits your units on the battlefield to cheer them up. Now it wont visit your invisible assassins anymore, showing everyone where they are!
-ui_AIC: AIC
-ui_AIV: AIV
-ui_Resource: Kezdőkészlet
-ui_SearchPath: ' Kérjük adja meg a telepítési útvonalat:'
-ui_StartTroops: Kezdőegységek
-ui_accept: OK
-ui_aicExport: Exportálás
-ui_aicExport_success: Exportálás sikeresen befejezve.
-ui_aicHint: Exportálja az .aic fájlokat a telepítőből a Crusader mappába.
-ui_aicconflict: A konfliktusok figyelmen kívül lesznek hagyva
-ui_aicconvertprompt: AIC konvertálás
-ui_aicofferconvert: AIC fájlok konvertálása az új verzióhoz?
-ui_aicoldversion: Régi verzió észlelve. Kattintson a konvertáláshoz
-ui_aicselect: 'Kérjük először szüntesse meg a többi AIC fájl(ok) kiválasztását. Az alábbi aic karakterek vannak kijelölve: '
-ui_ailords: MI Lordok
-ui_back: Vissza
-ui_browsepath: Kérjük adja meg a Stronghold Crusader telepítési könyvtárát.
-ui_bugfix: Hibajavítások
-ui_cancel: Mégsem
-ui_chooseLang: Kérjük válasszon ki egy nyelvet a telepítéshez a lent megjelenített listából.
-ui_chooseLangTitle: Telepítő nyelve
-ui_continue: Tovább
-ui_error: Hiba
-ui_finished: Kész
-ui_install: Telepítés
-ui_other: Egyéb
-ui_search: Keresés
-ui_troops: Egységek
-ui_uninstall: Eltávolítás
-ui_uninstalldone: Eltávolítás befejezve.
-ui_welcometext: "Ez egy nem hivatalos patch a Stronghold Crusader játékhoz.\nA Projekt nyílt forráskódú, ami megtalálható a [GitHub](https://github.com/UnofficialCrusaderPatch/UnofficialCrusaderPatch) weboldalon.\n\nElméletben minden Crusader verzió támogatott, viszont a változtatások eredetileg a 1.41 Steames verzióhoz lettek készítve.\nAzonban ha a játék verziód nem kompatibilis, a telepítő hibaüzenetet fog megjeleníteni. A telepített patch-verzió a főmenü bal alsó sarkában fog megjelenni.\nMinden változtatás előtt Backup fájl készül, ami visszaállítható a 'Eltávolítás' gombra kattintva vagy manuálisan visszahelyezhető.\n\nAz Unofficial Crusader Patch csapat\n\nUCP program alkotója\n[Sh0wdown](https://github.com/Sh0wdown)\n\nProjektvezetők\n[Kimberly Azula](https://github.com/ByBurton/)  \n[Krarilotus (Youtube)](https://www.youtube.com/channel/UCMXHqa2vmclSoSkuCu_q5rw)\n\nFejlesztők\n[LordHansCapon](https://github.com/LordHansCapon)  \n[np123](https://github.com/patel-nikhil)  \n[gynt](https://github.com/gynt)\n[J-T-de](https://github.com/J-T-de)  \n[Le spec](https://github.com/LeSpec)  \n[Chaf1812](https://github.com/Chaf1812)  \n\nFordítók\n[Lutel (YouTube)](https://www.youtube.com/user/MrLutel05) (Lengyel)  \n[Lolasik011](https://github.com/Lolasik011) (Orosz)  \n[Skysoul (e-mail)](mailto:theskysoul@vip.qq.com) (Kínai)\n[Liegav (YouTube)](https://www.youtube.com/channel/UCFqQMKfYgGb7iFKJagQl_wA) (Magyar)\n\nTartalom készítők\n[Evrey](https://github.com/Evrey) (aiv)  \n[Tatha](https://www.youtube.com/channel/UC4BrhBzHp1ymnczlkdKcSkg) (aiv,aic)  \n[PitchNeeded](https://github.com/PitchNeeded) (aiv)  \n[Xander10alpha (YouTube)](https://www.youtube.com/channel/UCYlyixfoKPcz-Ixi6Nc383Q) (aic)\n\nKülön köszönet nekik:\n[Firefly Studios](https://fireflyworlds.com/)  \na Stronghold széria létrehozásáért\n\nTovábbá külön köszönet:\n[Udwin (YouTube)](https://www.youtube.com/user/UdwinLP)  \n[PodeCaradox](https://github.com/PodeCaradox)  \n[GRhin](https://www.twitch.tv/grhin)  \n[Heroesflorian](https://github.com/Heroesflorian)"
-ui_wrongpath: A Stronghold Crusader nem található a megadott elérési útvonalon!
