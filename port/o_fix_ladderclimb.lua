@@ -19,8 +19,8 @@ local smallIntegerToBytes = utils.smallIntegerToBytes
 return {
 
     init = function(self, config)
-        -- 53D3D9
-        self.o_fix_ladderclimb_pre_edit = AOBScan("83 EC 08 8B 44 24 0C 8B D0 69 D2 90 04 00 00")
+        -- 53D3D0. Scanned from 7 bytes in: other modules put a jump over the first 7.
+        self.o_fix_ladderclimb_pre_edit = AOBScan("8B D0 69 D2 90 04 00 00 53 55 8B 6C 24 18 56 8D 34 0A") - 7
         -- 53D694
         self.o_fix_ladderclimb_edit = AOBScan("50 52 B9 ? ? ? ? E8 ? ? ? ? 66 3B C3 66 89 86 BC 08 00 00 74")
         -- 5790CB
