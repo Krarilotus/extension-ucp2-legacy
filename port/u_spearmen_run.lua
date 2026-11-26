@@ -18,8 +18,8 @@ local smallIntegerToBytes = utils.smallIntegerToBytes
 return {
 
     init = function(self, config)
-        -- 0055E064, the spearmen running decision; the je to remove is at +58. A module that changed
-        -- this code first (Running Units, Rebalancer) leaves the match empty.
+        -- The spearmen running decision; the je to remove is at +58. When Running Units or Rebalancer
+        -- changed this code first, nothing matches.
         local found, site = pcall(AOBScan, "66 39 BE ? ? ? ? 74 21 89 86 ? ? ? ? 66 83 BE ? ? ? ? 46 7E 3C 66 C7 86 ? ? ? ? FF FF 89 BE ? ? ? ? EB 32 66 39 BE ? ? ? ? 75 1C 66 39 BE ? ? ? ? 74 13 C7 86 ? ? ? ?  81 00 00 00 66 89 86 ? ? ? ? EB 0D 89 86 ? ? ? ? 66 89 BE")
         self.u_spearmen_run_edit = found and site and site + 58 or nil
     end,
