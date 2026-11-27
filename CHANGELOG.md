@@ -1,3 +1,8 @@
+# 2.15.3
+
+- Require UCP 3.0.8 and verify the speed, ladder and running-spearmen patch sites before writing.
+- Leave the affected fix off and report a startup error when its patch site is missing or ambiguous.
+
 # 2.15.2
 
 - Preserve the improved AI attack target cycle, wall-defense counts and ladder
