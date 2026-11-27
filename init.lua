@@ -87,20 +87,22 @@ return {
         
         for _, change in pairs(sortedChanges) do
           local opts = config[change]
-          -- Only load a change if anything of that change is enabled
-          if (opts.enabled and opts.enabled == true) or anyChildTrue(opts) then
-            if changes[change] ~= nil then
-                local status, returns = pcall(function() 
-                  features[change] = require(changes[change])
-                end)
-
-                if status then
-                  log(INFO, "Loaded " .. change)
-                else
-                  log(ERROR, "Error when loading " .. change .. " error: " .. returns)
-                end
+          if type(opts) ~= "table" then
+            log(ERROR, "Legacy " .. change .. " settings must be a table.")
+          elseif opts.enabled ~= nil and type(opts.enabled) ~= "boolean" then
+            log(ERROR, "Legacy " .. change .. " enabled setting must be a boolean.")
+          elseif opts.enabled == true or anyChildTrue(opts) then
+            local path = changes[change]
+            if path == nil then
+              log(ERROR, "A change was requested '" .. change .. "' for which no file exists")
+            else
+              local ok, feature = pcall(require, path)
+              if ok then
+                features[change] = feature
+                log(INFO, "Loaded " .. change)
               else
-                log(ERROR, "A change was requested '" .. change .. "' for which no file exists")           
+                log(ERROR, "Error when loading " .. change .. " error: " .. tostring(feature))
+              end
             end
           end
         end
