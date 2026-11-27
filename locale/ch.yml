@@ -2,10 +2,10 @@ Name: 非官方要塞十字军东征补丁
 ai: AI
 balance_changes: 平衡调整
 bugfixes: 错误修复
-fixes: 修复
+fixes: 修正
 improvements: 改进
 misc: 杂项
-qol: 体验优化
+qol: 便利性改进
 ai_housing: AI建造民房更加智能
 ai_housing_descr: 让 AI 领主更合理地管理住房：调整停止建造新住房的条件，并防止 AI 拆除住房。这通常能让 AI 在游戏初期更快扩张，并更快获得新工人。
 ai_build_housing: 调整供新农民入住的空余住房

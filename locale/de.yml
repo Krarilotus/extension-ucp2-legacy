@@ -2,10 +2,10 @@ Name: Inoffizieller Crusader Patcher
 ai: KI
 balance_changes: Balance-Änderungen
 bugfixes: Fehlerkorrekturen
-fixes: Fehlerbehebungen
+fixes: Korrekturen
 improvements: Verbesserungen
 misc: Sonstiges
-qol: Komfortfunktionen
+qol: Komfort
 ai_housing: Intelligenteres Errichten und Abreißen von Häusern
 ai_housing_descr: 'Lässt KI-Fürsten ihre Wohnhäuser sinnvoller verwalten: Die Kriterien zum Beenden des Hausbaus lassen sich anpassen, und das Abreißen von Wohnhäusern wird verhindert. Dadurch können die KIs zu Spielbeginn meist schneller wachsen und neue Arbeiter erhalten.'
 ai_build_housing: Freien Wohnraum für neue Bauern anpassen
