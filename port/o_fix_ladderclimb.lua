@@ -1,6 +1,5 @@
 local writeCode = core.writeCode
 local writeBytes = core.writeBytes
-local AOBScan = core.AOBScan
 local compile = core.compile
 local calculateCodeSize = core.calculateCodeSize
 local allocate = core.allocate
@@ -19,32 +18,36 @@ local smallIntegerToBytes = utils.smallIntegerToBytes
 return {
 
     init = function(self, config)
-        -- 53D3D0. Scanned from 7 bytes in: other modules put a jump over the first 7.
-        self.o_fix_ladderclimb_pre_edit = AOBScan("8B D0 69 D2 90 04 00 00 53 55 8B 6C 24 18 56 8D 34 0A") - 7
-        -- 53D694
-        self.o_fix_ladderclimb_edit = AOBScan("50 52 B9 ? ? ? ? E8 ? ? ? ? 66 3B C3 66 89 86 BC 08 00 00 74")
-        -- 5790CB
-        self.o_fix_ladderclimb_2_edit = AOBScan("66 89 8C 37 00 07 00 00 66 89 94 37 02 07 00 00")
-        -- 53D900
-        self.o_fix_ladderclimb_3_edit = AOBScan("53 8B 5C 24 08 8B C3 55 69 C0")
-        -- 54C3E5
-        self.o_fix_ladderclimb_4_edit = AOBScan("0F BF 96 02 07 00 00 0F BF 86 00 07 00 00 66 8B 8E 8A 09 00 00")
+        self.bindingError = nil
+        for _, binding in ipairs({
+            -- Start past the seven-byte entry detour used by Smarter Buildings.
+            {"o_fix_ladderclimb_pre_edit", "unit destination entry", "8B D0 69 D2 90 04 00 00 53 55 8B 6C 24 18 56 8D 34 0A", 2},
+            {"o_fix_ladderclimb_edit", "destination capture", "50 52 B9 ? ? ? ? E8 ? ? ? ? 66 3B C3 66 89 86 BC 08 00 00 74", 12},
+            {"o_fix_ladderclimb_2_edit", "destination update", "66 89 8C 37 00 07 00 00 66 89 94 37 02 07 00 00", 0},
+            {"o_fix_ladderclimb_3_edit", "ladder destination flag", "53 8B 5C 24 08 8B C3 55 69 C0", 0},
+            {"o_fix_ladderclimb_4_edit", "destination restore", "0F BF 96 02 07 00 00 0F BF 86 00 07 00 00 66 8B 8E 8A 09 00 00", 0},
+        }) do
+            local address, reason = core.AOBScanUnique(binding[3])
+            if not address then
+                self.bindingError = binding[2] .. " " .. reason
+                return
+            end
+            self[binding[1]] = address + binding[4]
+        end
     end,
 
     enable = function(self, config, persistentState)
-        
-        -- new DefaultHeader("o_fix_ladderclimb")
-        local code = {
-         -- cache current unti moved
-        }
-        writeCode(self.o_fix_ladderclimb_pre_edit, code)
+        if self.bindingError then
+            log(ERROR, "Ladder climbing fix is off: " .. self.bindingError .. ".")
+            return
+        end
         local currentUnitMoved = allocate(4)
         local code = {
             0xE9, function(address, index, labels)
                 local hook = {
                     0x89, 0x15, itob(currentUnitMoved),  -- mov [currentUnitMoved],edx
                     0x69, 0xD2, 0x90, 0x04, 0x00, 0x00,  -- imul edx,edx,00000490
-                    0xe9, relTo(self.o_fix_ladderclimb_pre_edit + 0 + 0 + 9 + 6, -4)
+                    0xe9, relTo(self.o_fix_ladderclimb_pre_edit + 6, -4)
                 }
                 local hookSize = calculateCodeSize(hook)
                 local hookAddress = allocateCode(hookSize)
@@ -53,13 +56,9 @@ return {
             end,
             0x90
         }
-        writeCode(self.o_fix_ladderclimb_pre_edit + 0 + 0 + 9, code)
-        local code = {
-         -- need 120k bytes, because we need 3*4 bytes per unit, and the SHC-E max is 10k units
-        }
-        writeCode(self.o_fix_ladderclimb_edit, code)
+        writeCode(self.o_fix_ladderclimb_pre_edit, code)
+        -- Three dwords per unit, up to 10,000 units in Extreme.
         local savedUnitDestinationForClimbing = persistentState:allocate('ladder-destinations', 120000)
-        -- skip 12 bytes
         local code = {
             0xE9, function(address, index, labels)
                 local hook = {
@@ -77,7 +76,7 @@ return {
                     0x58,  -- pop eax
                     0x66, 0x39, 0xD8,  -- cmp ax,bx
                     0x66, 0x89, 0x86, 0xBC, 0x08, 0x00, 0x00,  -- mov [esi+8BC],ax
-                    0xe9, relTo(self.o_fix_ladderclimb_edit + 0 + 0 + 12 + 10, -4)
+                    0xe9, relTo(self.o_fix_ladderclimb_edit + 10, -4)
                 }
                 local hookSize = calculateCodeSize(hook)
                 local hookAddress = allocateCode(hookSize)
@@ -86,7 +85,7 @@ return {
             end,
             0x90, 0x90, 0x90, 0x90, 0x90
         }
-        writeCode(self.o_fix_ladderclimb_edit + 0 + 0 + 12, code)
+        writeCode(self.o_fix_ladderclimb_edit, code)
         local exit = self.o_fix_ladderclimb_2_edit + 16
         local code = {
             0xE9, function(address, index, labels)

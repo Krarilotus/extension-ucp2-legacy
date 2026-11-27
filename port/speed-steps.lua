@@ -6,7 +6,7 @@ local M = {
 }
 
 -- The returned list contains opcodes, immediate bytes and relative jumps.
--- core.insertCode resolves those jumps when it writes the native code.
+-- core.writeCode resolves those jumps when it writes the native code.
 function M.code(direction, speedAddress, notify, unchanged)
   assert(direction == 1 or direction == -1)
   local increasing = direction == 1

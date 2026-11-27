@@ -5,7 +5,7 @@ version: 2.15.3
 default: true
 game: [SHC==1.41, SHCE==1.41]
 dependencies:
-  framework: ">=3.0.7"
+  framework: ">=3.0.8"
   map-extensions: "^1.0.0"
 meta:
   version: 1.0.0

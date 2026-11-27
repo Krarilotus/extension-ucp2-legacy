@@ -2,14 +2,34 @@
 -- Replace only its arithmetic branches when extended speeds are enabled.
 return {
   init=function(self)
-    self.up=core.AOBScan('83 F8 5A 0F 8D ? ? ? ? 83 C0 05 83 F8 5A A3 ? ? ? ? 7E 0A C7 05 ? ? ? ? 5A 00 00 00')
-    self.down=core.AOBScan('0F 8E 0B F4 FF FF 83 E8 05 BF 14 00 00 00 3B C7 A3 ? ? ? ? 7D 8F 89 3D ? ? ? ? EB 87 3D')
+    self.bindingError=nil
+    local up, reason=core.AOBScanUnique('83 F8 5A 0F 8D ? ? ? ? 83 C0 05 83 F8 5A A3 ? ? ? ? 7E 0A C7 05 ? ? ? ? 5A 00 00 00')
+    if not up then
+      self.bindingError='increase branch '..reason
+      return
+    end
+    local down, reason=core.AOBScanUnique('0F 8E 0B F4 FF FF 83 E8 05 BF 14 00 00 00 3B C7 A3 ? ? ? ? 7D 8F 89 3D ? ? ? ? EB 87 3D')
+    if not down then
+      self.bindingError='decrease branch '..reason
+      return
+    end
+    self.up=up
+    self.down=down
     self.speed=core.readInteger(self.up+16)
-    assert(self.speed==core.readInteger(self.down+17),'Speed keys use different state')
+    if self.speed~=core.readInteger(self.down+17) then
+      self.bindingError='speed keys use different state'
+      return
+    end
     self.done=self.up+9+core.readInteger(self.up+5)
-    assert(self.done==self.down+6+core.readInteger(self.down+2),'Speed key returns differ')
+    if self.done~=self.down+6+core.readInteger(self.down+2) then
+      self.bindingError='speed key returns differ'
+    end
   end,
   enable=function(self)
+    if self.bindingError then
+      log(ERROR, 'Extended game speed is off: '..self.bindingError..'.')
+      return
+    end
     local steps=require('port/speed-steps')
     for _,entry in ipairs({{self.up,1},{self.down,-1}}) do
       local code=steps.code(entry[2],self.speed,self.up+32,self.done)
