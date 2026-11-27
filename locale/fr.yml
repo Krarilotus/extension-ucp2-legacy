@@ -103,7 +103,7 @@ o_fix_ladderclimb: Conserver la destination après une échelle
 o_fix_ladderclimb_descr: Les unités se souviendront de leur destination initiale après avoir grimpé une échelle, au lieu de rester bloquées sur les échelles et d'attendre sur la case du mur sur lequel elles ont grimpé.
 o_fix_map_sending: Activation de l'envoi de cartes pour le mode multijoueur
 o_fix_map_sending_descr: Réduit la longueur du nom de la carte envoyée, afin de permettre à nouveau l'envoi de cartes.
-o_fix_moat_digging_unit_disappearing: Empêcher la disparition des fossoyeurs
+o_fix_moat_digging_unit_disappearing: Les unités qui creusent les douves ne disparaissent plus
 o_fix_moat_digging_unit_disappearing_descr: "Corrige le bug où les unités creusant les douves disparaissaient pendant qu'elles creusaient. \nRemarque : Les unités peuvent toujours disparaître si vous leur ordonnez de se déplacer alors qu'elles se trouvent sur un terrain où elles ne peuvent marcher !"
 o_fix_rapid_deletion_bug: Correction du bug où les ressources se dupliquent suite à une suppression rapide
 o_fix_rapid_deletion_bug_descr: La suppression de bâtiments à l'aide d'un auto-cliqueur rapide ne supprime plus le bâtiment plusieurs fois. Ceci fait que vous ne récupérez pas plus de ressources que le jeu n'avait prévu.

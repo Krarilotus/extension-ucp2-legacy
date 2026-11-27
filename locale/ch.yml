@@ -118,7 +118,7 @@ o_increase_path_update_tick_rate_descr: |-
 
   打开后，每50个游戏刻就会进行一次检测，使得单位的反应速度加快。
 o_keys: WASD键移动以及Ctrl+S/L键保存读取
-o_keys_descr: 可使用 WASD 移动镜头，Ctrl+S 快速保存，Ctrl+L 快速读取。注意：启用后将影响输入地图说明和用 A 键选择武器库。
+o_keys_descr: 可使用 WASD 移动镜头，Ctrl+S 快速保存，Ctrl+L 快速读取。注意：启用后将无法输入地图说明，也无法用 A 键选择武器库。
 o_moatvisibility: 一直显示规划中的护城河
 o_moatvisibility_descr: 你将可以一直看到规划中的护城河，而不需要点选单位。
 o_onlyai: 打开观察者模式
@@ -155,8 +155,8 @@ u_fix_lord_animation_stuck_movement: 修正领主摧毁建筑物后的人物动�
 u_fix_lord_animation_stuck_movement_descr: 修正了领主的姿势，当领主停止移动或者摧毁一个建筑物后，他将会站立，而不是被卡在地上。
 u_laddermen: 增强云梯兵对于箭矢的抗性
 u_laddermen_descr: |-
-  - 云梯兵承受 12 支弓箭才会阵亡，原版为 5 支
-  - 云梯兵承受 5 次弩箭或投石兵攻击才会阵亡，原版为 2 次
+  - 云梯兵被弓箭命中 12 次才会阵亡（原版为 5 次）
+  - 云梯兵被弩箭或投石兵的石弹命中 5 次才会阵亡（原版为 2 次）
   - 云梯兵费用由 4 金币提高至 20 金币
 u_spearmen: 增强长矛手抵抗箭矢的能力
 u_spearmen_descr: |2-
