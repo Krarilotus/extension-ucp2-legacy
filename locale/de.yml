@@ -2,10 +2,10 @@ Name: Inoffizieller Crusader Patcher
 ai: KI
 balance_changes: Balance-Änderungen
 bugfixes: Fehlerkorrekturen
-fixes: Korrekturen
+fixes: Fehlerbehebungen
 improvements: Verbesserungen
 misc: Sonstiges
-qol: Komfort
+qol: Komfortfunktionen
 ai_housing: Intelligenteres Errichten und Abreißen von Häusern
 ai_housing_descr: 'Lässt KI-Fürsten ihre Wohnhäuser sinnvoller verwalten: Die Kriterien zum Beenden des Hausbaus lassen sich anpassen, und das Abreißen von Wohnhäusern wird verhindert. Dadurch können die KIs zu Spielbeginn meist schneller wachsen und neue Arbeiter erhalten.'
 ai_build_housing: Freien Wohnraum für neue Bauern anpassen
@@ -32,9 +32,11 @@ ai_addattack_alt_descr: |-
   Sultans Angriffszahlen = 10, 15, 20, 25, ...
   Saladins Angriffszahlen = 50, 75, 100, 125, ...
 ai_assaultswitch: Kein KI-Angriffszielwechsel während Belagerung
-ai_assaultswitch_descr: KI-Lords die den mächtigsten oder schwächsten Gegner angreifen, hatten manchmal die Tendenz mitten in einem Angriff das Ziel zu wechseln, und ihre Truppen zu einer anderen Burg schicken. Mit dieser Einstellung, passiert das nicht mehr, sobald der Angriff begonnen hat, d.h. während des Sammelns vor der Burg kann ein Wechsel noch passieren.
+ai_assaultswitch_descr: KI-Lords, die den reichsten oder schwächsten Gegner angreifen, behalten ihr Ziel während der Belagerung bei. Vor Angriffsbeginn können sie es beim Sammeln noch wechseln.
 ai_attacklimit: Erhöhung des Angriffstruppenlimits der KIs
-ai_attacklimit_descr: In Vanilla is das Limit der zusätzlichen Truppen, die nach dem ersten Angriff dazukommen auf 200 begrenzt. Hier kann diese Grenze verändert werden.
+ai_attacklimit_descr: |-
+  Die Obergrenze für die Hauptarmee der KI ist die Stärke ihres ersten Angriffs plus dieser Wert (im Original: 200). Am Limit stellt die KI Rekrutierung und Hauptangriffe ein.
+  HINWEIS: Sehr hohe Werte können in längeren Partien das globale Einheitenlimit erreichen, sodass keine neuen Bauern mehr erscheinen.
 ai_attacktarget: AI-Angriffsziel einstellen
 ai_attacktarget_descr: |-
   Überschreibt, wie alle KI-Fürsten ihre Angriffsziele auswählen.
@@ -44,8 +46,9 @@ ai_attacktarget_richest: Reichster Gegner
 ai_attacktarget_weakest: Schwächster Gegner
 ai_attackwave: Angriffswellen verbessern
 ai_attackwave_descr: |-
-  In Vanilla schickt die KI bei einem Angriff immer nur so viele Einheiten auf einmal los wie Mauernstücke erreichbar sind. Bei Burgen die mit Gebäuden umbaut sind greifen die Einheiten dadurch nur tröpfchenweise an.
-  Durch die Aktivierung dieser Option greifen Einheiten auch Gebäude und Befestigungsanlagen an, sowie Mauerstücke die bereits von einem Angreifer besetzt sind. Außerdem schickt die KI jetzt auch mehr Truppen auf den gegnerischen Bergfried, sobald sie eine Bresche erkennt.
+  Im Originalspiel schickt die KI pro Mauerstück nur einen Soldaten; die übrigen Truppen warten, bis ein Platz frei wird.
+  Mit dieser Option greifen mehrere Einheiten dasselbe Mauerstück an und attackieren auch zuvor ignorierte Gebäude und Türme. Sobald eine Bresche offen ist, schickt die KI alle übrigen Angriffstruppen zum gegnerischen Bergfried.
+  Unten stellst du ein, welcher Anteil der Truppen vor einer Bresche Gebäude außerhalb der Burg angreift:
 ai_buywood: Genügend Holz kaufen
 ai_buywood_descr: Damit Bogenmacher etc. nicht ständig gekauftes Bauholz wegschnappen, kauft die KI mit dieser Einstellung immer 2 Holz mehr als nötig für Gebäude.
 ai_defense: Verstärkung der Burgverteidigung fixen
@@ -86,7 +89,7 @@ o_engineertent_descr: Mit dieser Einstellung wird das zuletzt zum Bau ausgewähl
 o_fast_placing: Fast placing
 o_fast_placing_descr: |-
   Bei gedrückter linker Maustaste werden folgende Gebäude fortlaufend platziert:
-  Mördergruben, Holzfällerhütten, gute und schlechte Dinge, Mühlen, Brunnen, Bäckereien und Wohnhäuser.
+  Mördergruben, Holzfällerhütten, gute und schlechte Dinge, Mühlen, Wassertröge, Bäckereien und Wohnhäuser.
 o_firecooldown: Feuerfeste Zeit gelöschter Gebäude anpassen
 o_firecooldown_descr: Die Zeitspanne, in der gelöschte Gebäude nicht erneut Feuer fangen können. Im Originalspiel beträgt die Dauer 2000 Spiel-Ticks, was zweieinhalb Monaten entspricht.
 o_fix_baker_disappear: Behebt das Verschwinden von Bäckern
@@ -102,7 +105,7 @@ o_fix_moat_digging_unit_disappearing_descr: Behebt das Verschwinden von Truppen,
 o_fix_rapid_deletion_bug: Fix resources rapid deletion
 o_fix_rapid_deletion_bug_descr: Deleting buildings with a fast auto clicker no longer gives resources for more than one deletion.
 o_freetrader: Kostenloser Marktplatz
-o_freetrader_descr: Da die KI sich manchmal selbst Schachmatt setzt, wenn sie kein Holz hat und der Marktplatz zerstört wurde, kann hier der Bau des Marktplatzes kostenlos gemacht werden.
+o_freetrader_descr: Macht den Bau des Marktplatzes kostenlos, damit die KI sich ohne Rohstoffe für einen Marktplatz nicht selbst blockiert. Im Mehrspielermodus erspart das einen Neustart oder das Abreißen von Gebäuden für Holz, wenn der Marktplatz vergessen wurde.
 o_gamespeed: Erweiterte Spielgeschwindigkeitsgrenzen
 o_gamespeed_descr: |-
   Die Spielgeschwindigkeit kann nun wie folgt geändert werden:
@@ -111,7 +114,7 @@ o_gamespeed_descr: |-
    - Von 200 bis 1000 in 100er Schritten
   Die neuen Werte sind nur im Spiel über die +- Tasten erreichbar, der Regler im Spielmenü bleibt ungeändert.
 o_healer: Heiler verarztet Verwundete
-o_healer_descr: Der Heiler des Apothekengebäudes sucht nun verletzte Soldaten, Zivilisten und Tiere auf und heilt diese. Nahe Ziele werden dabei bevorzugt. Mit jeder Heilungs-Animation wird ca. 1/3 des Lebens eines Lanzenträgers geheilt. Das Schlendern durch die Gärten und Aufsuchen von Pestwolken wird dadurch nicht ersetzt! Nur das Schlendern durch die Burg wird ausgelassen, bis keine Verwundeten mehr in Reichweite sind.
+o_healer_descr: Der Heiler des Apothekengebäudes sucht nun verletzte Soldaten, Belagerungsgeräte, Zivilisten und Tiere auf und heilt sie. Nahe Ziele werden dabei bevorzugt. Mit jeder Heilungsanimation wird etwa 1/3 des Lebens eines Lanzenträgers geheilt. Das Schlendern durch die Gärten und Aufsuchen von Pestwolken bleibt erhalten. Nur das Schlendern durch die Burg wird ausgelassen, bis keine Verwundeten mehr in der Nähe sind.
 o_increase_path_update_tick_rate: Suche öfter nach verfügbaren Wegen
 o_increase_path_update_tick_rate_descr: Das Spiel überprüft nun viermal so häufig, welche Bereiche der Karte verbunden sind. Dadurch können beispielsweise nach der Zerstörung eines Torhauses oder eines Turmes die Truppen schneller ins Innere einer zuvor unzugänglichen Burg beordert werden.
 o_keys: WASD-Tasten und Quicksaves
@@ -121,7 +124,7 @@ o_keys_descr: |-
 o_moatvisibility: Geplanten Burggraben immer zeigen
 o_moatvisibility_descr: Mit dieser Einstellung wird der gesetzte, aber noch nicht ausgehobene Burggraben immer angezeigt, auch wenn man die Burggrabenplatzierung abwählt.
 o_onlyai: Zuschauer-Modus aktivieren [bug möglich]
-o_onlyai_descr: Entfernt Spieler 1 sodass man nur noch zugucken kann und 8 KIs in einem Kreuzzug möglich sind. Gespeicherte Spiele laden jetzt auch ordnungsgemäß in diesem Modus. Ab und zu tritt ein Bug auf, bei dem überall auf der Karte zufällige Objekte auftauchen. Diese sind jedoch nur visuell und können durch einfaches Spiel speichern -> Mission beenden -> Spiel laden behoben werden.
+o_onlyai_descr: Entfernt den menschlichen Spieler aus Platz 1, sodass du Partien mit bis zu 8 KIs ungestört beobachten kannst. Spielstände laden in diesem Modus korrekt; war ein Mensch dabei, lässt sich dessen Platz jedoch nicht steuern. Gelegentlich erscheinen zufällige Objekte auf der Karte – das ist nur ein Darstellungsfehler und lässt sich durch Speichern, Mission beenden und Neuladen beheben.
 o_override_identity_menu: Fügt neue Optionen zum Menüpunkt 'Identität zulegen' hinzu
 o_override_identity_menu_descr: Im Menüpunkt 'Identität zulegen' kann man nun die Starteinheiten für 'Normales Spiel' ändern
 o_playercolor: Farbe von Spieler 1 wechseln

@@ -163,16 +163,16 @@ o_shfy_beer: Bonificación de popularidad por cerveza
 o_shfy_peasantspawnrate: Frecuencia de aparición de campesinos en la hoguera
 o_shfy_religion: Bonificación de popularidad por catedrales e iglesias
 o_shfy_resourcequantity: Cantidad de recursos entregados
-o_stop_player_keep_rotation: Orientar el torreón del jugador hacia el centro del mapa
+o_stop_player_keep_rotation: Orientar la fortaleza del jugador hacia el centro del mapa
 o_stop_player_keep_rotation_descr: |-
-  Los torreones de los jugadores se orientan como los de la IA, con la hoguera hacia el borde del mapa.
+  Las fortalezas de los jugadores se orientan como las de la IA, con la hoguera hacia el borde del mapa.
   NOTA: No gira los demás edificios: sus entradas y zonas de reunión siguen apuntando hacia la esquina suroeste.
 o_xtreme: Eliminar la barra mágica de Crusader Extreme
 u_arabwall: Los espadachines árabes destruyen murallas más deprisa
 u_arabwall_descr: En el juego original los espadachines árabes destruyen murallas más despacio que cualquier otra unidad cuerpo a cuerpo. Esta opción aproximadamente duplica su velocidad contra murallas y los sitúa ligeramente por encima de los lanceros.
 u_arabxbow: Mayor protección de los espadachines árabes contra virotes
 u_arabxbow_descr: Los espadachines árabes mueren tras 6 impactos de ballesta en lugar de 3.
-u_fireballistafix: Las balistas incendiarias apuntan automáticamente a monjes y excavadores
+u_fireballistafix: Las balistas de fuego apuntan automáticamente a monjes y zapadores
 u_fix_applefarm_blocking: Evitar que se bloquee el trabajador del huerto
 u_fix_applefarm_blocking_descr: Colocar edificios en el lado superior izquierdo del huerto ya no bloquea al granjero mientras recoge manzanas.
 u_fix_lord_animation_stuck_movement: Restablecer la animación del señor al destruir edificios
@@ -187,7 +187,7 @@ u_spearmen_descr: |-
   - Los lanceros mueren tras 5 flechas en lugar de 3.
   - Sobreviven por poco a un virote de ballesta, en lugar de morir de un solo impacto.
 u_spearmen_run: Los lanceros corren por defecto en lugar de caminar
-u_spearmen_run_descr: Hace que los lanceros corran por defecto como los esclavos y los soldados con maza.
+u_spearmen_run_descr: Hace que los lanceros corran por defecto como los esclavos y los maceros.
 u_tanner_fix: Evitar que los curtidores vuelvan sin una vaca
 u_tanner_fix_descr: Los curtidores ya no vuelven con las manos vacías si otro curtidor se lleva la vaca elegida. Ahora esperan un poco y eligen otra vaca.
 ui.red: Rojo

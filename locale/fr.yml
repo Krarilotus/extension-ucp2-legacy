@@ -1,4 +1,4 @@
-Name: Crusader Patcheur Non Officiel
+Name: Correctif non officiel pour Crusader
 ai: IA
 balance_changes: Modifications de l'équilibrage
 bugfixes: Corrections de bugs
@@ -41,7 +41,11 @@ ai_attacktarget_nearest: Ennemi le plus proche
 ai_attacktarget_richest: Ennemi le plus riche
 ai_attacktarget_weakest: Ennemi le plus faible
 ai_attackwave: Comportement plus actif de l'IA en attaque
-ai_attackwave_descr: "Dans la version vanilla, l'IA n'envoie qu'un seul soldat par bout de mur lors d'une attaque et le reste de l'armée attend jusqu'à ce qu'un segment de mur soit à nouveau libre s'il y a plus de troupes que de cases de murs disponibles. \nCette option permettra à l'IA d'envoyer plusieurs unités par segment de mur pour les abattre plus rapidement et permettra également aux unités d'attaquer les bâtiments et les tours qui étaient auparavant ignorés.\nDe plus, l'IA enverra toutes ses troupes d'attaque restantes vers le donjon ennemi une fois que les murs auront été abattus.\nAjustez en dessous le pourcentage de troupes attaquant à l'extérieur des bâtiments du château avant qu'une brèche ne soit ouverte :"
+ai_attackwave_descr: |-
+  Dans la version vanilla, l'IA n'envoie qu'un seul soldat par pan de mur lors d'une attaque et le reste de l'armée attend qu'un segment se libère s'il y a plus de troupes que de cases de mur disponibles.
+  Cette option permet à l'IA d'envoyer plusieurs unités par segment de mur pour le détruire plus vite, et aussi d'attaquer les bâtiments et tours auparavant ignorés.
+  Dès qu'une brèche est ouverte, l'IA envoie toutes ses troupes d'attaque restantes vers le donjon ennemi.
+  Réglez ci-dessous la part des troupes qui attaquent les bâtiments hors du château avant l'ouverture d'une brèche :
 ai_buywood: Acheter du bois supplémentaire
 ai_buywood_descr: Dans la version vanilla, lorsqu'elles construisent un bâtiment, les IAs ne stockent du bois que pour le prix exact du bâtiment qu'elles s'apprêtent à construire. Cela ne laisse aucun matériau restant pour la production active d'armes consommant du bois. Dans ce cas-là, 2 bois supplémentaires sont stockés par l'IA afin d'éviter ce problème.
 ai_defense: Renouvellement plus fiable des défenseurs du château
@@ -49,14 +53,14 @@ ai_defense_descr: Corrige un bug qui empêchait l'IA de remplacer les troupes ma
 ai_fix_crusader_archers_pitch: Permet aux archers européens d'allumer le brai
 ai_fix_crusader_archers_pitch_descr: Les archers européens de l'IA allument le brai de la même manière que les archers arabes lorsqu'ils se défendent contre des unités ennemies.
 ai_fix_laddermen_with_enclosed_keep: Permettre aux IA ayant leur donjon fermé de déployer des écheliers
-ai_fix_laddermen_with_enclosed_keep_descr: Les IAs arrêtent de ne plus d'attaquer les murs ennemis avec leurs écheliers si leur propre donjon est fermé.
+ai_fix_laddermen_with_enclosed_keep_descr: L'IA continue d'envoyer ses écheliers à l'assaut des murs ennemis même si son propre donjon est enclavé.
 ai_nosleep: Désactiver le mode veille pour les installations de production
 ai_nosleep_descr: "Les seigneurs IA mettent en sommeil leurs bâtiments de production s'ils manquent d'une ressource spécifique dont ils dépendent pour leur industrie. Par exemple, tous les boulangers sont mis en sommeil lorsque Saladin n'a plus de farine. \nCependant, cela ne tient souvent pas compte des produits encore en cours de traitement ou en milieu de livraison, ce qui entraîne une perte constante de produits.\nVous pouvez désactiver entièrement ce mode veille pour l'IA ici."
 ai_resources_rebuy: Améliore le réapprovisionnement de l'IA en produits nécessaires
 ai_resources_rebuy_descr: Il arrive souvent que l'IA ne se réapprovisionne pas en produits même si elle dispose de l'or nécessaire pour cela, laissant ses chaînes de production à sec. Cette option réduit le temps pendant lequel l'IA attend que ses stocks soient vides avant de se réapprovisionner en produits nécessaires.
 ai_noflour_maxtime_descr: Temps en 1/12ème de mois jusqu'à ce que l'IA réapprovisionne 2 farines.
 ai_noiron_maxtime_descr: Temps en 1/12ème de mois jusqu'à ce que l'IA réapprovisionne 2 fers.
-ai_nowood_maxtime_descr: Temps en 1/12ème de mois jusqu'à ce que l'IA réapprovisionne 2 bois.
+ai_nowood_maxtime_descr: Délai avant que l'IA rachète 5 unités de bois, en douzièmes de mois.
 ai_rebuild: Amélioration des réparations de l'IA
 ai_rebuild_descr: Avec ce paramètre, les IAs remplaceront les ruines des tours et les murs légèrement endommagés. Elles construiront également par dessus des terrains de rassemblement pour les bâtiments de recrutement si leur bâtiment principal a disparu.
 ai_recruitinterval: Augmentation de la vitesse de recrutement de base
@@ -67,10 +71,10 @@ ai_recruitstate_initialtimer: Fixer la durée initiale des IA jusqu'à ce qu'ell
 ai_recruitstate_initialtimervalue_descr: Ajuste le nombre de mois pendant lesquels l'IA recrutera exclusivement des troupes de défense, à moins que sa réserve d'unités de défense ne soit pleine. Dans la version vanilla, cette période s'étend sur 6 mois.
 ai_tethers: Fixer les attaches à bœufs à un maximum de 10 par seigneur IA
 ai_tethers_descr: Habituellement, l'IA construit une nouvelle attache à bœufs pour chaque nouvelle carrière qu'elle construit, même si elle dépasse la limite habituelle de 10 attaches de bœuf par seigneur. Cela peut conduire à un spam de bœufs, atteignant la limite de logement pour un seigneur IA, ce qui fait qu'aucun nouveau paysan n'apparaît. Avec ce paramètre, vous pouvez désactiver le placement d'une attache à bœufs supplémentaire lorsqu'une nouvelle carrière est construite.
-ai_towerengines: Augmente la limite des tours de siège de l'IA
+ai_towerengines: Relever la limite des engins de siège sur les tours de l'IA
 ai_towerengines_descr: Habituellement, l'IA ne construit que jusqu'à trois mangonneaux et ballistes sur ses tours. Avec cette option, cette limite est portée à 5 par engin.
-fix_apple_orchard_build_size: Réduire la taille du verger de pommiers
-fix_apple_orchard_build_size_descr: Modifie l'aperçu de la construction du verger de pommiers pour qu'il corresponde à la taille qu'il occupe une fois la ferme posée. Ceci économise de l'espace lors de la construction de vergers de pommiers et facilite la tâche de l'IA pour qu'elle de l'espace afin les placer sur l'herbe d'oasis.
+fix_apple_orchard_build_size: Réduire l'emprise de placement du verger
+fix_apple_orchard_build_size_descr: Adapte l'aperçu de construction du verger de pommiers à l'emprise réelle qu'il occupe une fois posé. Cela économise de la place et aide l'IA à trouver où le construire sur l'herbe des oasis.
 o_armory_marketplace_weapon_order_fix: Réorganise l'ordre des armes de l'armurerie/le marché
 o_armory_marketplace_weapon_order_fix_descr: Réorganise les icônes des armes dans le marché pour qu'elles soient identiques à celles de l'armurerie. Cela inclut le changement de pages dans le marché, ainsi que l'affichage dans la catégorie principale.
 o_change_siege_engine_spawn_position_catapult: Faire apparaître les engins de siège au centre de leur tente.
@@ -95,11 +99,11 @@ o_fix_baker_disappear: Corrige le bug où les boulangers disparaissent
 o_fix_baker_disappear_descr: Les boulangers ne disparaissent plus lorsqu'ils ne trouvent pas de farine dans leur réserve ciblée.
 o_fix_fletcher_bug: Corrige le bug où la trajectoire des facteurs d'arc est inefficace
 o_fix_fletcher_bug_descr: Corrige un bug où le comportement des facteurs d'arc consistait à retourner sur leur lieu de travail après avoir livré l'arc/l'arbalète à l'armurerie au lieu d'aller directement à la réserve pour prendre du bois pour le prochain cycle de production.
-o_fix_ladderclimb: Les unités qui montent à l'échelle conservent leur cible issues de la commande de mouvement
+o_fix_ladderclimb: Conserver la destination après une échelle
 o_fix_ladderclimb_descr: Les unités se souviendront de leur destination initiale après avoir grimpé une échelle, au lieu de rester bloquées sur les échelles et d'attendre sur la case du mur sur lequel elles ont grimpé.
 o_fix_map_sending: Activation de l'envoi de cartes pour le mode multijoueur
 o_fix_map_sending_descr: Réduit la longueur du nom de la carte envoyée, afin de permettre à nouveau l'envoi de cartes.
-o_fix_moat_digging_unit_disappearing: Correction du bug où les troupes en train de creuser disparraissent
+o_fix_moat_digging_unit_disappearing: Empêcher la disparition des fossoyeurs
 o_fix_moat_digging_unit_disappearing_descr: "Corrige le bug où les unités creusant les douves disparaissaient pendant qu'elles creusaient. \nRemarque : Les unités peuvent toujours disparaître si vous leur ordonnez de se déplacer alors qu'elles se trouvent sur un terrain où elles ne peuvent marcher !"
 o_fix_rapid_deletion_bug: Correction du bug où les ressources se dupliquent suite à une suppression rapide
 o_fix_rapid_deletion_bug_descr: La suppression de bâtiments à l'aide d'un auto-cliqueur rapide ne supprime plus le bâtiment plusieurs fois. Ceci fait que vous ne récupérez pas plus de ressources que le jeu n'avait prévu.

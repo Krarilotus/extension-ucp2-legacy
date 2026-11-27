@@ -67,7 +67,7 @@ ai_recruitstate_initialtimer: Az MI a megadott ideig az AIC paraméterek alapjá
 ai_recruitstate_initialtimervalue_descr: Az értéknek add meg azon hónapok számát, amikor az MI az AIC fájlban megadott toborzási sebeséggel toboroz kizárólag védekező egységeket, ha már teljesen megerősítette a védelmét, akkor támadó egységeket fog toborozni
 ai_tethers: Ökörkarámok korlátozása MI-lordként legfeljebb 10-re
 ai_tethers_descr: Az MI általában minden új kőfejtőhöz épít egy új ökörkarámot, még akkor is, ha ezzel túllépi a lordonkénti szokásos 10-es korlátot. Ez ökörkarám-túlzáshoz vezethet, elérve az MI-lord lakossági korlátját, így nem születnek új parasztok. Ezzel a beállítással letiltható ennek az extra ökörkarámnak az elhelyezése új kőfejtő építésekor.
-ai_towerengines: Az MI torony-ostromgépeinek korlátjának növelése
+ai_towerengines: Az MI tornyaira építhető ostromgépek számának növelése
 ai_towerengines_descr: Az MI általában legfeljebb három kővetőt és három ballisztát épít a tornyaira. Ezzel a beállítással ez a korlát géptípusonként 5-re nő.
 fix_apple_orchard_build_size: Almáskert építési méretének csökkentése
 fix_apple_orchard_build_size_descr: Az almáskert elhelyezése előtt az előnézeti mérete nagyobb volt, mint amekkora valójában az almáskert az elhelyezés után. Ez a hiba kijavításra került. Ezzel a beállítással több szabad hely marad az almáskertek építésekor és megnöveli az MI mezőgazdasági épületek építésének rátáját.

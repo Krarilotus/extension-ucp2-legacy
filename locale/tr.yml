@@ -163,9 +163,9 @@ o_shfy_beer: Biranın popülerlik bonusu
 o_shfy_peasantspawnrate: Kamp ateşinde köylü ortaya çıkma hızı
 o_shfy_religion: Kilise ve katedralin popülerlik bonusu
 o_shfy_resourcequantity: Teslim edilen kaynak miktarı
-o_stop_player_keep_rotation: Oyuncunun kalesini harita merkezine doğru çevir
+o_stop_player_keep_rotation: Oyuncunun iç kalesini harita merkezine çevir
 o_stop_player_keep_rotation_descr: |-
-  Oyuncu kaleleri, yapay zekâ kaleleri gibi yönlendirilir; kamp ateşi haritanın dış kenarına bakar.
+  Oyuncuların iç kaleleri, yapay zekânın iç kaleleri gibi yönlendirilir; kamp ateşi haritanın dış kenarına bakar.
   NOT: Diğer binalar döndürülmez. Girişleri ve toplanma alanları güneybatı köşesine bakmaya devam eder.
 o_xtreme: Crusader Extreme’deki sihir çubuğunu kaldır
 u_arabwall: Arap kılıçlı askerler surları daha hızlı yıksın
@@ -187,7 +187,7 @@ u_spearmen_descr: |-
   - Mızrakçılar 3 yerine 5 ok isabetinde ölür.
   - Tek bir arbalet okuyla ölmek yerine çok az canla hayatta kalır.
 u_spearmen_run: Mızrakçılar varsayılan olarak yürümek yerine koşsun
-u_spearmen_run_descr: Mızrakçıların köleler ve gürzlü askerler gibi varsayılan olarak koşmasını sağlar.
+u_spearmen_run_descr: Mızrakçıların köleler ve gürzcüler gibi varsayılan olarak koşmasını sağlar.
 u_tanner_fix: Tabakçıların ineksiz dönmesini düzelt
 u_tanner_fix_descr: Başka bir tabakçı hedefledikleri ineği aldığında artık ineksiz geri dönmezler. Biraz bekleyip başka bir inek seçerler.
 ui.red: Kırmızı
