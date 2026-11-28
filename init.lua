@@ -107,16 +107,23 @@ return {
           end
         end
         
+        local failed = {}
         for name, change in pairs(features) do
           log(DEBUG, "initializing: " .. name)
-          change:init(config[name])
+          local ok, reason = pcall(change.init, change, config[name])
+          if not ok then
+            log(ERROR, "Legacy " .. name .. " is off: " .. tostring(reason))
+            failed[name] = true
+          end
         end
         
         for name, change in pairs(features) do
-          log(DEBUG, "enabling: " .. name)
-          local ok, reason = pcall(change.enable, change, config[name], persistentState)
-          if not ok then
-            log(ERROR, "Legacy " .. name .. " is off: " .. tostring(reason))
+          if not failed[name] then
+            log(DEBUG, "enabling: " .. name)
+            local ok, reason = pcall(change.enable, change, config[name], persistentState)
+            if not ok then
+              log(ERROR, "Legacy " .. name .. " is off: " .. tostring(reason))
+            end
           end
         end
 
