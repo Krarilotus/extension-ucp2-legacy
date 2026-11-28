@@ -114,7 +114,10 @@ return {
         
         for name, change in pairs(features) do
           log(DEBUG, "enabling: " .. name)
-          change:enable(config[name], persistentState)
+          local ok, reason = pcall(change.enable, change, config[name], persistentState)
+          if not ok then
+            log(ERROR, "Legacy " .. name .. " is off: " .. tostring(reason))
+          end
         end
 
         -- The existing save owner handles maps, saved games and replay starting
