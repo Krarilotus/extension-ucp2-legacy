@@ -27,9 +27,9 @@ return {
             {"o_fix_ladderclimb_3_edit", "ladder destination flag", "53 8B 5C 24 08 8B C3 55 69 C0", 0},
             {"o_fix_ladderclimb_4_edit", "destination restore", "0F BF 96 02 07 00 00 0F BF 86 00 07 00 00 66 8B 8E 8A 09 00 00", 0},
         }) do
-            local address, reason = core.AOBScanUnique(binding[3])
-            if not address then
-                self.bindingError = binding[2] .. " " .. reason
+            local ok, address = pcall(core.AOBScan, binding[3])
+            if not ok then
+                self.bindingError = binding[2] .. " not found"
                 return
             end
             self[binding[1]] = address + binding[4]

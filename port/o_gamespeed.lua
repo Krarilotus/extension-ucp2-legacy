@@ -3,14 +3,14 @@
 return {
   init=function(self)
     self.bindingError=nil
-    local up, reason=core.AOBScanUnique('83 F8 5A 0F 8D ? ? ? ? 83 C0 05 83 F8 5A A3 ? ? ? ? 7E 0A C7 05 ? ? ? ? 5A 00 00 00')
-    if not up then
-      self.bindingError='increase branch '..reason
+    local ok, up=pcall(core.AOBScan, '83 F8 5A 0F 8D ? ? ? ? 83 C0 05 83 F8 5A A3 ? ? ? ? 7E 0A C7 05 ? ? ? ? 5A 00 00 00')
+    if not ok then
+      self.bindingError='increase branch not found'
       return
     end
-    local down, reason=core.AOBScanUnique('0F 8E 0B F4 FF FF 83 E8 05 BF 14 00 00 00 3B C7 A3 ? ? ? ? 7D 8F 89 3D ? ? ? ? EB 87 3D')
-    if not down then
-      self.bindingError='decrease branch '..reason
+    local downOk, down=pcall(core.AOBScan, '0F 8E 0B F4 FF FF 83 E8 05 BF 14 00 00 00 3B C7 A3 ? ? ? ? 7D 8F 89 3D ? ? ? ? EB 87 3D')
+    if not downOk then
+      self.bindingError='decrease branch not found'
       return
     end
     self.up=up
